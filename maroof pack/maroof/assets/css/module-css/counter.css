@@ -10,7 +10,7 @@
 .counter-one__wrap {
     position: relative;
     display: block;
-    background-color: var(--maroof-black);
+    background-color: #121212;
     padding: 120px 0 242px;
     border-radius: 20px;
     max-width: 1760px;
