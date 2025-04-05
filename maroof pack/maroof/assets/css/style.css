@@ -676,6 +676,7 @@ ul {
   position: relative;
   display: block;
   z-index: 1;
+  background-color: white;
 }
 
 .main-menu__wrapper-inner {
@@ -2198,4 +2199,127 @@ ul {
 
 .imagenDoble:hover {
   box-shadow: 15px 15px 0px 0px #7906a759; /* Aumenta el efecto al pasar el mouse */
+}
+
+
+/* Custom styles for the slider */
+.custom-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-column {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-column a {
+  display: block;
+}
+
+.custom-img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .custom-row {
+    flex-direction: column; /* Apila las columnas verticalmente */
+  }
+
+  .custom-column {
+    flex: none;
+    width: 100%; /* Cada columna ocupa el 100% del ancho */
+  }
+
+  .custom-column:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior de la última columna */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-img {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+  }
+}
+
+
+.logoNabel {
+  width: 200px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .logoNabel {
+    width: 150px; /* Reduce el tamaño en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .logoNabel {
+    width: 100px; /* Reduce aún más el tamaño en pantallas pequeñas */
+  }
+}
+
+/* Estilos para la sección "Nuestro enfoque" */
+.our-approach {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.our-approach__title {
+  font-size: 2rem;
+  color: #e01751;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.our-approach__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.our-approach__item {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.our-approach__item:hover {
+  transform: translateY(-10px);
+}
+
+.our-approach__icon {
+  font-size: 2.5rem;
+  color: #e01751;
+  margin-bottom: 15px;
+}
+
+.our-approach__subtitle {
+  font-size: 1.25rem;
+  color: #e01751;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.our-approach__text {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.5;
 }

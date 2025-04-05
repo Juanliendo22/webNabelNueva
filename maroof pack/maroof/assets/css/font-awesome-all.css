@@ -621,7 +621,9 @@ readers do not read off random characters that represent icons */
   content: "\f465"; }
 
 .fa-bars:before {
-  content: "\f0c9"; }
+  content: "\f0c9"; 
+color: #e01751;
+}
 
 .fa-baseball:before {
   content: "\f432"; }

@@ -4,9 +4,10 @@
 .main-slider {
     position: relative;
     display: block;
-    background-color: var(--maroof-black);
+    background: white;
     z-index: 10;
 }
+
 
 .main-slider .item {
     position: relative;
