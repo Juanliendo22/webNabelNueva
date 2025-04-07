@@ -2364,3 +2364,16 @@ ul {
 .floating-button.gmail {
   background-color: #D14836;
 }
+
+.accordion-button {
+  background-color: #666666; /* gris oscuro */
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #a70505; /* azul Bootstrap */
+  color: white;
+  box-shadow: none;
+}
