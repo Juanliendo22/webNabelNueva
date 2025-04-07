@@ -4,7 +4,7 @@
 .site-footer {
     position: relative;
     display: block;
-    background-color: var(--maroof-black);
+    background-color: #750122;
     overflow: hidden;
     z-index: 1;
 }
@@ -353,7 +353,7 @@
 .site-footer-two {
     position: relative;
     display: block;
-    background-color: var(--maroof-black);
+    background-color: #59595c;
     margin-top: -164px;
     overflow: hidden;
     z-index: 1;

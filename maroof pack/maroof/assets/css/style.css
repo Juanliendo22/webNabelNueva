@@ -666,6 +666,7 @@ ul {
   z-index: 999;
 }
 
+
 .main-menu {
   position: relative;
   display: block;
@@ -683,7 +684,7 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   z-index: 1;
 }
@@ -2322,4 +2323,44 @@ ul {
   font-size: 1rem;
   color: #666666;
   line-height: 1.5;
+}
+
+
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.floating-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button.whatsapp {
+  background-color: #e01751;
+  color: white;
+}
+
+.floating-button.gmail {
+  background-color: #D14836;
 }
