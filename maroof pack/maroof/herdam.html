@@ -158,7 +158,6 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
       
-
         <section class="project-four">
             <div class="container" style="margin-top: 10rem;">
                 <div class="section-title text-center">
@@ -198,6 +197,126 @@
                 </div>
             </div>
         </section>
+        
+        <section class="about-three" id="about-grampas" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Consumibles</h2>
+                                <p>Descripción de los consumibles, como grampas, clips y otros productos relacionados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Clips en Rollo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Gazas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-three" id="about-maquinas" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Máquinas</h2>
+                                <p>Descripción de las máquinas, como cortadoras, mezcladoras y embuchadoras.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Mezcladora">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-three" id="about-repuestos" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Repuestos</h2>
+                                <p>Descripción de los repuestos, como discos, cuchillas y accesorios para máquinas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Discos">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Cuchillas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const images = document.querySelectorAll('.category-img');
+                const aboutSections = document.querySelectorAll('.about-three');
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        const category = image.getAttribute('data-category');
+        
+                        // Hide all about sections
+                        aboutSections.forEach(section => section.style.display = 'none');
+        
+                        // Show the selected about section
+                        const activeAbout = document.getElementById(`about-${category}`);
+                        if (activeAbout) {
+                            activeAbout.style.display = 'block';
+                        }
+                    });
+                });
+            });
+        </script>
         
         <section class="we-serve">
             <div class="container">

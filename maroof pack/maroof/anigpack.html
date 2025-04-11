@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> About || maroof || maroof HTML 5 Template </title>
+    <title> Herdam || Nabel SRL </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/resources/ctaHerdam.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/resources/ctaHerdam.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/resources/ctaHerdam.png" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <meta name="description" content="maroof HTML 5 Template " />
 
@@ -125,24 +125,25 @@
             <nav class="main-menu">
                 <div class="main-menu__wrapper">
                     <div class="container">
-                        <div class="main-menu__wrapper-inner">
+                        <div class="main-menu__wrapper-inner" style="display: flex; justify-content: space-between; align-items: center;">
+                            <!-- Logo alineado a la izquierda -->
                             <div class="main-menu__left">
                                 <div class="main-menu__logo">
                                     <a href="index.html"><img class="logoNabel" src="assets/images/resources/logo-1.png" alt=""></a>
                                 </div>
                             </div>
                             
-                            <div class="main-menu__main-menu-box">
-                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                              
-                            </div>
-                            <div class="main-menu__right">
+                            <!-- Contenido alineado a la derecha -->
+                            <div class="main-menu__right" style="display: flex; align-items: center; gap: 1rem;">
+                                <div class="main-menu__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                </div>
                                 <div class="main-menu__search-and-nav-sidebar-icon-box">
                                     <div class="main-menu__nav-sidebar-icon">
                                         <a class="navSidebar-button" href="#">
                                             <span class="nav-sidebar-menu-1"></span>
-                                            <span  class="nav-sidebar-menu-2"></span>
-                                            <span  class="nav-sidebar-menu-3"></span>
+                                            <span class="nav-sidebar-menu-2"></span>
+                                            <span class="nav-sidebar-menu-3"></span>
                                         </a>
                                     </div>
                                 </div>
@@ -156,37 +157,48 @@
         <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
-      
-
         <section class="project-four">
             <div class="container" style="margin-top: 10rem;">
+                <div class="section-title text-center">
+                    <img src="./assets/images/resources/herdamLogo.png" alt="">
+                </div>
                 <div class="row">
-                    <!-- Consumibles -->
+                    <!-- Tripa -->
                     <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="300ms">
                         <div class="project-four__single">
                             <div class="project-four__img-box">
                                 <div class="project-four__img">
-                                    <img src="assets/images/project/project-4-3.jpg" alt="Grampas" data-category="grampas" class="category-img">
+                                    <img src="assets/images/categorias/consumibles.png" alt="Tripa" data-category="tripa" class="category-img">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Máquinas -->
+                    <!-- Bolsa de Vacío -->
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="400ms">
                         <div class="project-four__single">
                             <div class="project-four__img-box">
                                 <div class="project-four__img">
-                                    <img src="assets/images/project/project-4-4.jpg" alt="Máquinas" data-category="maquinas" class="category-img">
+                                    <img src="assets/images/categorias/maquinaria.png" alt="Bolsa de Vacío" data-category="bolsa-vacio" class="category-img">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Repuestos -->
+                    <!-- Pouches -->
                     <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="500ms">
                         <div class="project-four__single">
                             <div class="project-four__img-box">
                                 <div class="project-four__img">
-                                    <img src="assets/images/project/project-4-5.jpg" alt="Repuestos" data-category="repuestos" class="category-img">
+                                    <img src="assets/images/categorias/repuestos.png" alt="Pouches" data-category="pouches" class="category-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tela Tapa Hueso -->
+                    <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="600ms">
+                        <div class="project-four__single">
+                            <div class="project-four__img-box">
+                                <div class="project-four__img">
+                                    <img src="assets/images/categorias/repuestos.png" alt="Tela Tapa Hueso" data-category="tela-tapa-hueso" class="category-img">
                                 </div>
                             </div>
                         </div>
@@ -195,129 +207,37 @@
             </div>
         </section>
         
-        <section class="we-serve">
+        <section class="about-three" id="about-tripa" style="display: none;">
             <div class="container">
-                <div class="we-serve__main-tab-box tabs-box">
-                    <div class="tabs-content">
-                        <!-- Grampas -->
-                        <div class="tab active-tab" id="grampas">
-                            <div class="accordion" id="accordionGrampas">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingGrampas1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas1" aria-expanded="true" aria-controls="collapseGrampas1">
-                                            Grampa Modelo A
-                                        </button>
-                                    </h2>
-                                    <div id="collapseGrampas1" class="accordion-collapse collapse show" aria-labelledby="headingGrampas1" data-bs-parent="#accordionGrampas">
-                                        <div class="accordion-body">
-                                            Descripción del producto: Grampa Modelo A es ideal para aplicaciones generales.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingGrampas2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas2" aria-expanded="false" aria-controls="collapseGrampas2">
-                                            Grampa Modelo B
-                                        </button>
-                                    </h2>
-                                    <div id="collapseGrampas2" class="accordion-collapse collapse" aria-labelledby="headingGrampas2" data-bs-parent="#accordionGrampas">
-                                        <div class="accordion-body">
-                                            Descripción del producto: Grampa Modelo B es resistente y duradera para trabajos pesados.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingGrampas3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas3" aria-expanded="false" aria-controls="collapseGrampas3">
-                                            Grampa Modelo C
-                                        </button>
-                                    </h2>
-                                    <div id="collapseGrampas3" class="accordion-collapse collapse" aria-labelledby="headingGrampas3" data-bs-parent="#accordionGrampas">
-                                        <div class="accordion-body">
-                                            Descripción del producto: Grampa Modelo C es perfecta para aplicaciones específicas.
-                                        </div>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Tripa</h2>
+                                <p>Descripción de las tripas, incluyendo opciones biodegradables y tradicionales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Con Molde">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Máquinas -->
-                        <div class="tab" id="maquinas">
-                            <div class="accordion" id="accordionMaquinas">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingMaquinas1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas1" aria-expanded="true" aria-controls="collapseMaquinas1">
-                                            Clipeadora Automática X1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseMaquinas1" class="accordion-collapse collapse show" aria-labelledby="headingMaquinas1" data-bs-parent="#accordionMaquinas">
-                                        <div class="accordion-body">
-                                            Descripción del producto: La Clipeadora Automática X1 es eficiente y fácil de usar.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingMaquinas2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas2" aria-expanded="false" aria-controls="collapseMaquinas2">
-                                            Clipeadora Manual Y2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseMaquinas2" class="accordion-collapse collapse" aria-labelledby="headingMaquinas2" data-bs-parent="#accordionMaquinas">
-                                        <div class="accordion-body">
-                                            Descripción del producto: La Clipeadora Manual Y2 es ideal para pequeñas producciones.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingMaquinas3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas3" aria-expanded="false" aria-controls="collapseMaquinas3">
-                                            Clipeadora Industrial Z3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseMaquinas3" class="accordion-collapse collapse" aria-labelledby="headingMaquinas3" data-bs-parent="#accordionMaquinas">
-                                        <div class="accordion-body">
-                                            Descripción del producto: La Clipeadora Industrial Z3 es robusta y diseñada para grandes volúmenes.
-                                        </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Sin Molde">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Repuestos -->
-                        <div class="tab" id="repuestos">
-                            <div class="accordion" id="accordionRepuestos">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingRepuestos1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepuestos1" aria-expanded="true" aria-controls="collapseRepuestos1">
-                                            Repuesto para Clipeadora X1
-                                        </button>
-                                    </h2>
-                                    <div id="collapseRepuestos1" class="accordion-collapse collapse show" aria-labelledby="headingRepuestos1" data-bs-parent="#accordionRepuestos">
-                                        <div class="accordion-body">
-                                            Descripción del producto: Repuesto original para la Clipeadora Automática X1.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingRepuestos2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepuestos2" aria-expanded="false" aria-controls="collapseRepuestos2">
-                                            Repuesto para Mezcladora Y2
-                                        </button>
-                                    </h2>
-                                    <div id="collapseRepuestos2" class="accordion-collapse collapse" aria-labelledby="headingRepuestos2" data-bs-parent="#accordionRepuestos">
-                                        <div class="accordion-body">
-                                            Descripción del producto: Repuesto original para la Mezcladora Y2.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingRepuestos3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepuestos3" aria-expanded="false" aria-controls="collapseRepuestos3">
-                                            Repuesto para Picadora Z3
-                                        </button>
-                                    </h2>
-                                    <div id="collapseRepuestos3" class="accordion-collapse collapse" aria-labelledby="headingRepuestos3" data-bs-parent="#accordionRepuestos">
-                                        <div class="accordion-body">
-                                            Descripción del producto: Repuesto original para la Picadora Z3.
-                                        </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Zubiox (Tripa Biodegradable)">
                                     </div>
                                 </div>
                             </div>
@@ -327,6 +247,282 @@
             </div>
         </section>
         
+        <section class="about-three" id="about-bolsa-vacio" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Bolsa de Vacío</h2>
+                                <p>Descripción de las bolsas de vacío para diversas aplicaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Aplicaciones Sin Hueso">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Aplicaciones Con Hueso">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Llenado en Caliente y Cocción">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Zubiox (Bolsas Biodegradables)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-three" id="about-pouches" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Pouches</h2>
+                                <p>Descripción de los pouches, incluyendo opciones biorientadas y biodegradables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Biorientado">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Zubiox">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-three" id="about-tela-tapa-hueso" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-three__right">
+                            <div class="section-title text-left">
+                                <h2 class="section-title__title">Tela Tapa Hueso</h2>
+                                <p>Descripción de las telas tapa hueso para aplicaciones específicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="services-five__carousel owl-theme owl-carousel">
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/services/services-5-1.jpg" alt="Triune">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const images = document.querySelectorAll('.category-img');
+                const aboutSections = document.querySelectorAll('.about-three');
+        
+                images.forEach(image => {
+                    image.addEventListener('click', () => {
+                        const category = image.getAttribute('data-category');
+        
+                        // Hide all about sections
+                        aboutSections.forEach(section => section.style.display = 'none');
+        
+                        // Show the selected about section
+                        const activeAbout = document.getElementById(`about-${category}`);
+                        if (activeAbout) {
+                            activeAbout.style.display = 'block';
+                        }
+                    });
+                });
+            });
+        </script>
+
+<section class="we-serve">
+    <div class="container">
+        <div class="we-serve__main-tab-box tabs-box">
+            <div class="tabs-content">
+                <!-- Tripa -->
+                <div class="tab active-tab" id="tripa">
+                    <div class="accordion" id="accordionTripa">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTripa1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTripa1" aria-expanded="true" aria-controls="collapseTripa1">
+                                    Con Molde
+                                </button>
+                            </h2>
+                            <div id="collapseTripa1" class="accordion-collapse collapse show" aria-labelledby="headingTripa1" data-bs-parent="#accordionTripa">
+                                <div class="accordion-body">
+                                    <p>Tripa con molde para aplicaciones específicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTripa2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTripa2" aria-expanded="false" aria-controls="collapseTripa2">
+                                    Sin Molde
+                                </button>
+                            </h2>
+                            <div id="collapseTripa2" class="accordion-collapse collapse" aria-labelledby="headingTripa2" data-bs-parent="#accordionTripa">
+                                <div class="accordion-body">
+                                    <p>Tripa sin molde para aplicaciones tradicionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTripa3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTripa3" aria-expanded="false" aria-controls="collapseTripa3">
+                                    Zubiox (Tripa Biodegradable)
+                                </button>
+                            </h2>
+                            <div id="collapseTripa3" class="accordion-collapse collapse" aria-labelledby="headingTripa3" data-bs-parent="#accordionTripa">
+                                <div class="accordion-body">
+                                    <p>Tripa biodegradable Zubiox para soluciones sostenibles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bolsa de Vacío -->
+                <div class="tab" id="bolsa-vacio">
+                    <div class="accordion" id="accordionBolsaVacio">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBolsa1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBolsa1" aria-expanded="true" aria-controls="collapseBolsa1">
+                                    Aplicaciones Sin Hueso
+                                </button>
+                            </h2>
+                            <div id="collapseBolsa1" class="accordion-collapse collapse show" aria-labelledby="headingBolsa1" data-bs-parent="#accordionBolsaVacio">
+                                <div class="accordion-body">
+                                    <p>Bolsas de vacío para aplicaciones sin hueso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBolsa2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBolsa2" aria-expanded="false" aria-controls="collapseBolsa2">
+                                    Aplicaciones Con Hueso
+                                </button>
+                            </h2>
+                            <div id="collapseBolsa2" class="accordion-collapse collapse" aria-labelledby="headingBolsa2" data-bs-parent="#accordionBolsaVacio">
+                                <div class="accordion-body">
+                                    <p>Bolsas de vacío para aplicaciones con hueso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBolsa3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBolsa3" aria-expanded="false" aria-controls="collapseBolsa3">
+                                    Llenado en Caliente y Cocción
+                                </button>
+                            </h2>
+                            <div id="collapseBolsa3" class="accordion-collapse collapse" aria-labelledby="headingBolsa3" data-bs-parent="#accordionBolsaVacio">
+                                <div class="accordion-body">
+                                    <p>Bolsas de vacío para llenado en caliente y cocción.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBolsa4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBolsa4" aria-expanded="false" aria-controls="collapseBolsa4">
+                                    Zubiox (Bolsas Biodegradables)
+                                </button>
+                            </h2>
+                            <div id="collapseBolsa4" class="accordion-collapse collapse" aria-labelledby="headingBolsa4" data-bs-parent="#accordionBolsaVacio">
+                                <div class="accordion-body">
+                                    <p>Bolsas biodegradables Zubiox para soluciones sostenibles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pouches -->
+                <div class="tab" id="pouches">
+                    <div class="accordion" id="accordionPouches">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPouches1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePouches1" aria-expanded="true" aria-controls="collapsePouches1">
+                                    Biorientado
+                                </button>
+                            </h2>
+                            <div id="collapsePouches1" class="accordion-collapse collapse show" aria-labelledby="headingPouches1" data-bs-parent="#accordionPouches">
+                                <div class="accordion-body">
+                                    <p>Pouches biorientados para mayor resistencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPouches2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePouches2" aria-expanded="false" aria-controls="collapsePouches2">
+                                    Zubiox
+                                </button>
+                            </h2>
+                            <div id="collapsePouches2" class="accordion-collapse collapse" aria-labelledby="headingPouches2" data-bs-parent="#accordionPouches">
+                                <div class="accordion-body">
+                                    <p>Pouches biodegradables Zubiox para soluciones sostenibles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tela Tapa Hueso -->
+                <div class="tab" id="tela-tapa-hueso">
+                    <div class="accordion" id="accordionTelaTapaHueso">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTela1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTela1" aria-expanded="true" aria-controls="collapseTela1">
+                                    Triune
+                                </button>
+                            </h2>
+                            <div id="collapseTela1" class="accordion-collapse collapse show" aria-labelledby="headingTela1" data-bs-parent="#accordionTelaTapaHueso">
+                                <div class="accordion-body">
+                                    <p>Tela tapa hueso Triune para aplicaciones específicas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const images = document.querySelectorAll('.category-img');
@@ -384,90 +580,17 @@
         </section>
         <!--Brand One End-->
 
-        <!-- Service Three Start -->
-        <section class="services-three">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2 class="section-title__title">Nuestros Productos Estrellas</h2>
-                </div>
-                <div class="services-three__inner">
-                    <ul class="services-three__service-list list-unstyled">
-                        <li class="hover-item">
-                            <div class="services-three__service-list-single">
-                                <a href="#" class="services-three__long-arrow">
-                                    <img src="assets/images/icon/long-arrow.png" alt="">
-                                </a>
-                                <div class="services-three__sub-title">
-                                    <p>Grampas</p>
-                                </div>
-                                <h3 class="services-three__title"><a href="grampas-linea-completa.html">Grampas Línea Completa</a></h3>
-                            </div>
-                            <div class="hover-item__box">
-                                <img src="assets/images/services/services-three-service-list-img-1.jpg" alt="Grampas Línea Completa"
-                                    class="hover-item__box-img">
-                            </div>
-                        </li>
-                        <li class="hover-item active">
-                            <div class="services-three__service-list-single">
-                                <a href="#" class="services-three__long-arrow">
-                                    <img src="assets/images/icon/long-arrow.png" alt="">
-                                </a>
-                                <div class="services-three__sub-title">
-                                    <p>Clips</p>
-                                </div>
-                                <h3 class="services-three__title"><a href="clips-linea-completa.html">Clips de Alta Resistencia</a></h3>
-                            </div>
-                            <div class="hover-item__box">
-                                <img src="assets/images/services/services-three-service-list-img-2.jpg" alt="Clips de Alta Resistencia"
-                                    class="hover-item__box-img">
-                            </div>
-                        </li>
-                        <li class="hover-item">
-                            <div class="services-three__service-list-single">
-                                <a href="#" class="services-three__long-arrow">
-                                    <img src="assets/images/icon/long-arrow.png" alt="">
-                                </a>
-                                <div class="services-three__sub-title">
-                                    <p>Gazas</p>
-                                </div>
-                                <h3 class="services-three__title"><a href="gazas-colores-varios.html">Gazas de Colores Varios</a></h3>
-                            </div>
-                            <div class="hover-item__box">
-                                <img src="assets/images/services/services-three-service-list-img-3.jpg" alt="Gazas de Colores Varios"
-                                    class="hover-item__box-img">
-                            </div>
-                        </li>
-                        <li class="hover-item">
-                            <div class="services-three__service-list-single">
-                                <a href="#" class="services-three__long-arrow">
-                                    <img src="assets/images/icon/long-arrow.png" alt="">
-                                </a>
-                                <div class="services-three__sub-title">
-                                    <p>Máquinas</p>
-                                </div>
-                                <h3 class="services-three__title"><a href="maquinas-clipeadoras.html">Clipeadoras Automáticas</a></h3>
-                            </div>
-                            <div class="hover-item__box">
-                                <img src="assets/images/services/services-three-service-list-img-4.jpg" alt="Clipeadoras Automáticas"
-                                    class="hover-item__box-img">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- Service Three End -->
 
         
         <!--CTA Two Start-->
     <section class="cta-two">
         <div class="container">
             <div class="cta-two__inner">
-                <div class="cta-two__bg" style="background-image: url(assets/images/backgrounds/cta-two-bg.jpg);">
+                <div class="cta-two__bg" style="background-image: url(assets/images/backgrounds/ctaHerdam2.png);">
                 </div>
                 <div class="cta-two__img-and-content">
                     <div class="cta-two__img">
-                        <img src="assets/images/resources/cta-two-img-1.png" alt="CTA Image">
+                        <img src="assets/images/resources/ctaHerdam.png" alt="CTA Image">
                     </div>
                     <div class="cta-two__content">
                         <h3 class="cta-two__title">Soluciones Confiables para tu Producción</h3>
@@ -497,7 +620,7 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget-two__column footer-widget-two__about">
                                 <div class="footer-widget-two__logo">
-                                    <a href="index.html"><img src="assets/images/resources/logo-2.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/images/resources/footerLogo.png" alt=""></a>
                                 </div>
                                 <p class="footer-widget-two__about-text">Nabel SRL <br> I + D en insumos alimenticios</p>
                             </div>
