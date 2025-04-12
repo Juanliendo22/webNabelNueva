@@ -4,7 +4,7 @@
 .site-footer {
     position: relative;
     display: block;
-    background-color: #750122;
+    background: linear-gradient(to bottom, #525151, #aaaaaa);
     overflow: hidden;
     z-index: 1;
 }
