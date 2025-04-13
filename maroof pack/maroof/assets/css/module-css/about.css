@@ -285,11 +285,21 @@
 .about-one__points li+li {
     margin-top: 12px;
 }
+.about-one__points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px; /* Espacio entre el icono y el texto */
+}
 
 .about-one__points li .icon {
-    position: relative;
-    display: inline-block;
+    margin-top: 4px; /* Alineación vertical con el párrafo */
+    color: #e3005b; /* O el color de tu icono */
 }
+
+.about-one__points li p {
+    margin: 0;
+}
+
 
 .about-one__points li .icon span {
     position: relative;

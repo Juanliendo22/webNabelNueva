@@ -2384,14 +2384,16 @@ ul {
 
 .herdamColor{
   color:#af202a;
-  
+  border-color: 1px solid #af202a;
 }
 
 
 .nabelColor{
   color:#e01751;
+  border-color: 1px solid #e01751;
 }
 
 .anigpackColor{
   color:#ff8d40;
+border-color: 1px solid #ff8d40;
 }

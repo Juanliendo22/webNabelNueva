@@ -197,9 +197,61 @@
                             <div class="we-serve__left">
                                 <ul class="tab-buttons list-unstyled">
                                     <li data-tab="#anigpack" class="tab-btn active-btn"><span>Anigpack</span></li>
-                                    <li data-tab="#herdam" class="tab-btn"><span>Herdam</span></li>
                                     <li data-tab="#nabel" class="tab-btn"><span>Nabel</span></li>
+                                    <li data-tab="#herdam" class="tab-btn"><span>Herdam</span></li>
                                 </ul>
+                                <script>document.addEventListener('DOMContentLoaded', function() {
+                                    // Mapeo de colores (versiones más saturadas)
+                                    const buttonColors = {
+                                      '#anigpack': '#FF6B00',  // Naranja intenso
+                                      '#nabel': '#D10047',      // Rosa fuerte
+                                      '#herdam': '#9A0000'      // Rojo vibrante
+                                    };
+                                  
+                                    const buttons = document.querySelectorAll('.tab-btn');
+                                  
+                                    // Aplicar estilos iniciales
+                                    buttons.forEach(button => {
+                                      const tabId = button.getAttribute('data-tab');
+                                      const color = buttonColors[tabId];
+                                      
+                                      if (color) {
+                                        // Estilo base
+                                        button.style.cssText = `
+                                          color: ${color};
+                                          background: transparent;
+                                          border-radius: 30px;
+                                          cursor: pointer;
+                                          transition: all 0.3s ease;
+                                          font-weight: bold;
+                                        `;
+                                        
+                                        // Estilo activo
+                                        if (button.classList.contains('active-btn')) {
+                                          button.style.background = color;
+                                          button.style.color = '#fff';
+                                        }
+                                      }
+                                    });
+                                  
+                                    // Manejo de clics
+                                    buttons.forEach(button => {
+                                      button.addEventListener('click', function() {
+                                        // Resetear todos
+                                        buttons.forEach(btn => {
+                                          btn.classList.remove('active-btn');
+                                          const tabId = btn.getAttribute('data-tab');
+                                          btn.style.background = 'transparent';
+                                          btn.style.color = buttonColors[tabId];
+                                        });
+                                        
+                                        // Activar actual
+                                        this.classList.add('active-btn');
+                                        this.style.background = buttonColors[this.getAttribute('data-tab')];
+                                        this.style.color = '#fff';
+                                      });
+                                    });
+                                  });</script>
                             </div>
                         </div>
                         <div class="col-xl-9">
@@ -487,7 +539,7 @@
                                     <div class="section-title__tagline-box">
                                         <span class="section-title__tagline">Contáctanos</span>
                                     </div>
-                                    <h2 style="font-size: 4rem ; color: white;">Adaptamos soluciónes a tu medida</h2>
+                                    <h2 style="font-size: 4rem ; color: white;">Adaptamos soluciones a tu medida</h2>
                                 </div>
                                 <form id="contactForm" class="contact-one__form">
                                     <div class="row">
@@ -576,48 +628,58 @@
        
 
             
-        <!-- Footer Start -->
-        <footer class="site-footer">
-            <div class="site-footer__bg" ></div>
-            <div class="site-footer__middle">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="footer-widget__column footer-widget__about">
-                                <div class="footer-widget__logo">
-                                    <a href="index.html"><img src="assets/images/resources/footerLogo.png" alt=""></a>
-                                </div>
-                                <p class="footer-widget__about-text">Nabel SRL <br> I + D en insumos alimenticios</p>
-                            </div>
+       <!-- Footer Start -->
+<footer class="site-footer">
+    <div class="site-footer__bg"></div>
+    <div class="site-footer__middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="footer-widget__column footer-widget__about">
+                        <div class="footer-widget__logo">
+                            <a href="index.html"><img src="assets/images/resources/footerLogo.png" alt="Nabel SRL"></a>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="footer-widget__column footer-widget__contact">
-                                <h3 class="footer-widget__title">Contacto</h3>
-                                <ul class="footer-widget__contact-list list-unstyled">
-                                    <li style="color: white;"><span class="icon-envelope"></span> <a style="color: white;" href="mailto:infonabel@nabelsrl.com.ar">infonabel@nabelsrl.com.ar</a></li>
-                                    <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+543514831140">+543514831140</a></li>
-                                    <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+543514831140">+543514831140</a></li>
-                                    <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+5493516953366">+5493516953366</a></li>
-                                    <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+5493541511559">+5493541511559</a></li>
+                        <p class="footer-widget__about-text">
+                            NABEL S.R.L<br>
+                            I + D en insumos alimenticios
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="footer-widget__column footer-widget__contact">
+                        <h3 class="footer-widget__title">Contacto</h3>
+                        <ul class="footer-widget__contact-list list-unstyled">
+                            <li style="color: white;"><span class="icon-envelope"></span> <a style="color: white;" href="mailto:infonabel@nabelsrl.com.ar">infonabel@nabelsrl.com.ar</a></li>
+                            
+                            <!-- Teléfonos con formato espaciado -->
+                            <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+543514831140">+54 351 483 1140</a></li>
+                            <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+5493512801536">+54 9 351 280 1536</a></li>
+                            <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+5493516953366">+54 9 351 695 3366</a></li>
+                            <li style="color: white;"><span class="icon-call"></span> <a style="color: white;" href="tel:+5493541511559">+54 9 3541 511 559</a></li>
 
-                                    <li style="color: white;"><span class="icon-location"></span> Córdoba, Argentina</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="footer-widget__column footer-widget__social">
-                                <h3 class="footer-widget__title">Síguenos</h3>
-                                <div class="footer-widget__social">
-                                    <a href="https://www.instagram.com/nabelsrl/"><span class="icon-instagram"></span></a>
-                                </div>
-                            </div>
+                            <!-- Dirección completa -->
+                            <li style="color: white;"><span style="color: white;" class="icon-location"></span> 
+                                Fleming 2085 | Ameghino Sur<br>
+                                CP X5011 BOC | Córdoba | Argentina
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="footer-widget__column footer-widget__social">
+                        <h3 class="footer-widget__title">Síguenos</h3>
+                        <div class="footer-widget__social-links">
+                            <a href="https://www.instagram.com/nabelsrl/" target="_blank" rel="noopener">
+                                <span class="icon-instagram"></span> @nabelsrl
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Footer End -->
-
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
 
     </div><!-- /.page-wrapper -->
 
