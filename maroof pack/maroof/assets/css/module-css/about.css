@@ -5,9 +5,15 @@
     position: relative;
     display: block;
     padding: 120px 0 120px;
+    color: white;
     z-index: 1;
+    background: linear-gradient(
+        to top right,
+        #e3005b 0%,
+        #ffe5ede5 100%
+    );
+    background-attachment: fixed; /* Opcional: efecto parallax */
 }
-
 .about-one__left {
     position: relative;
     display: block;

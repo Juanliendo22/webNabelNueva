@@ -83,6 +83,7 @@
                             <div class="logo">
                                 <a href="index.html"><img src="assets/images/resources/logo-2.png" alt="" /></a>
                             </div>
+                            
                             <div class="content-box">
                                 <h4>Contacto</h4>
                                 <p>Comunicanos tu duda <br>
@@ -130,7 +131,25 @@
                                     <a href="index.html"><img class="logoNabel" src="assets/images/resources/logo-1.png" alt=""></a>
                                 </div>
                             </div>
-                            
+                            <div class="main-menu-three__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li>
+                                        <a href="index.html">Inicio </a>
+                                       
+                                    </li>
+                                    <li>
+                                        <a href="about.html">Nuestras marcas</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nosotros</a>
+                                        </li>
+                                    <li >
+                                        <a href="#">Contacto</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
                             <!-- Contenido alineado a la derecha -->
                             <div class="main-menu__right" style="display: flex; align-items: center; gap: 1rem;">
                                 <div class="main-menu__main-menu-box">
@@ -195,63 +214,36 @@
                     <div class="row">
                         <div class="col-xl-3">
                             <div class="we-serve__left">
+                                
                                 <ul class="tab-buttons list-unstyled">
-                                    <li data-tab="#anigpack" class="tab-btn active-btn"><span>Anigpack</span></li>
-                                    <li data-tab="#nabel" class="tab-btn"><span>Nabel</span></li>
-                                    <li data-tab="#herdam" class="tab-btn"><span>Herdam</span></li>
+                                    <li data-tab="#anigpack" class="btn1"><span>Anigpack</span></li>
+                                    <li data-tab="#nabel" class="btn2"><span>Nabel</span></li>
+                                    <li data-tab="#herdam" class="btn3"><span>Herdam</span></li>
                                 </ul>
-                                <script>document.addEventListener('DOMContentLoaded', function() {
-                                    // Mapeo de colores (versiones más saturadas)
-                                    const buttonColors = {
-                                      '#anigpack': '#FF6B00',  // Naranja intenso
-                                      '#nabel': '#D10047',      // Rosa fuerte
-                                      '#herdam': '#9A0000'      // Rojo vibrante
-                                    };
-                                  
-                                    const buttons = document.querySelectorAll('.tab-btn');
-                                  
-                                    // Aplicar estilos iniciales
-                                    buttons.forEach(button => {
-                                      const tabId = button.getAttribute('data-tab');
-                                      const color = buttonColors[tabId];
-                                      
-                                      if (color) {
-                                        // Estilo base
-                                        button.style.cssText = `
-                                          color: ${color};
-                                          background: transparent;
-                                          border-radius: 30px;
-                                          cursor: pointer;
-                                          transition: all 0.3s ease;
-                                          font-weight: bold;
-                                        `;
-                                        
-                                        // Estilo activo
-                                        if (button.classList.contains('active-btn')) {
-                                          button.style.background = color;
-                                          button.style.color = '#fff';
-                                        }
-                                      }
+                               <script>document.addEventListener('DOMContentLoaded', function() {
+                                const tabButtons = document.querySelectorAll('.tab-buttons li');
+                                
+                                tabButtons.forEach(button => {
+                                  button.addEventListener('click', function() {
+                                    // Remover clases activas
+                                    document.querySelectorAll('.tab').forEach(tab => {
+                                      tab.classList.remove('active-tab');
                                     });
-                                  
-                                    // Manejo de clics
-                                    buttons.forEach(button => {
-                                      button.addEventListener('click', function() {
-                                        // Resetear todos
-                                        buttons.forEach(btn => {
-                                          btn.classList.remove('active-btn');
-                                          const tabId = btn.getAttribute('data-tab');
-                                          btn.style.background = 'transparent';
-                                          btn.style.color = buttonColors[tabId];
-                                        });
-                                        
-                                        // Activar actual
-                                        this.classList.add('active-btn');
-                                        this.style.background = buttonColors[this.getAttribute('data-tab')];
-                                        this.style.color = '#fff';
-                                      });
+                                    tabButtons.forEach(btn => {
+                                      btn.classList.remove('active-btn');
                                     });
-                                  });</script>
+                                    
+                                    // Activar la pestaña y botón correspondiente
+                                    const tabId = this.getAttribute('data-tab');
+                                    document.querySelector(tabId).classList.add('active-tab');
+                                    this.classList.add('active-btn');
+                                  });
+                                });
+                                
+                                // Activar primera pestaña por defecto
+                                tabButtons[0].click();
+                              });</script>
+                                    
                             </div>
                         </div>
                         <div class="col-xl-9">
@@ -330,7 +322,7 @@
                                             <div class="we-serve__content-left">
                                                 <span class="we-serve__content-tagline">SOBRE NABEL</span>
                                                 <h2 class="we-serve__content-title">Investigación + desarrollo en insumos alimenticios.</h2>
-                                                <p class="we-serve__text">insumos alimenticios para que su formulación esté lo más completa, funcional y competitiva del mercado, para esto trabajamos en continua investigación, desarrollo y aplicación para llegar al producto final requerido.</p>
+                                                <p class="we-serve__text">insumos alimenticios para que su formulación esté lo más completa, funcional y competitiva del mercado.</p>
                                                 <ul class="we-serve__points-box list-unstyled">
                                                     <li>
                                                         <div class="icon">
@@ -365,13 +357,13 @@
        
 
         <!--About One Start -->
-        <section class="about-one">
+        <section class="about-one" style="margin-bottom: 5rem;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="about-one__img">
-                                <img  src="assets/images/resources/somosNabel.png" alt="Innovación y Calidad">
+                                <img style="width: 500px;"  src="assets/images/resources/somosNabel.svg" alt="Innovación y Calidad">
                                 
                                
                             </div>
@@ -381,9 +373,9 @@
                         <div class="about-one__right">
                             <div class="section-title text-left">
                                 <div class="section-title__tagline-box">
-                                    <span class="section-title__tagline">Nosotros</span>
+                                    <span class="section-title__tagline" style="color:white;">Nosotros</span>
                                 </div>
-                                <h2 class="section-title__title" style="text-align: center;">QUIÉNES SOMOS</h2>
+                                <h2 class="section-title__title2" style="text-align: center; color: white; padding-top: 10px;">QUIÉNES SOMOS</h2>
                             </div>
                             <div class="about-one__content">
                                 <p class="about-one__text-1">
@@ -392,7 +384,7 @@
                                 
                                 <div class="about-one__points-box">
                                     <ul class="about-one__points list-unstyled">
-                                        <h3 class="about-one__section-title">Misión:</h3>
+                                        <h3 class="about-one__section-title" style="color: white;">Misión:</h3>
 
                                         <li>
                                             <div class="icon">
@@ -411,7 +403,7 @@
                                 
                                 <div class="about-one__points-box">
                                     <ul class="about-one__points list-unstyled">
-                                        <h3 class="about-one__section-title">Visión:</h3>
+                                        <h3 class="about-one__section-title"style="color:white;" >Visión:</h3>
 
                                         <li>
                                             <div class="icon">
@@ -539,7 +531,7 @@
                                     <div class="section-title__tagline-box">
                                         <span class="section-title__tagline">Contáctanos</span>
                                     </div>
-                                    <h2 style="font-size: 4rem ; color: white;">Adaptamos soluciones a tu medida</h2>
+                                    <h2 class="section-title__title2" style="font-size: 4rem ; color: white;">Adaptamos soluciones a tu medida</h2>
                                 </div>
                                 <form id="contactForm" class="contact-one__form">
                                     <div class="row">
