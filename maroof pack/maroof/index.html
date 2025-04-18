@@ -86,21 +86,21 @@
                             
                             <div class="content-box">
                                 <h4>Contacto</h4>
-                                <p>Comunicanos tu duda <br>
-                                   Nosotros te asesoramos. </p>
+                                <p>Contáctanos. <br>
+                                    Nosotros te asesoramos </p>
                             </div>
                             <div class="form-inner">
                                 <h4>Rellene los campos</h4>
                                 <form action="assets/inc/sendemail.php" class="contact-form-validated"
                                     novalidate="novalidate">
-                                    <div class="form-group">
-                                        <input type="text" name="name" placeholder="nombre" required="">
+                                    <div class="form-group ">
+                                        <input type="text" name="name" placeholder="Nombre/Razón social" required="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email" required="">
+                                        <input type="email" name="email" placeholder="Correo -E-mail" required="">
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="message" placeholder="Su duda..."></textarea>
+                                        <textarea name="message" placeholder="Consulta"></textarea>
                                     </div>
                                     <div class="form-group message-btn">
                                         <button type="submit" class="thm-btn form-inner__btn">Enviar</button>
@@ -139,22 +139,19 @@
                                        
                                     </li>
                                     <li>
-                                        <a href="about.html">Nuestras marcas</a>
+                                        <a href="#marcas">Nuestras marcas</a>
                                     </li>
                                     <li>
-                                        <a href="#">Nosotros</a>
-                                        </li>
+                                        <a href="#nosotros">Nosotros</a>
                                     <li >
-                                        <a href="#">Contacto</a>
+                                        <a href="#contacto">Contacto</a>
                                     </li>
                                     
                                 </ul>
                             </div>
                             <!-- Contenido alineado a la derecha -->
                             <div class="main-menu__right" style="display: flex; align-items: center; gap: 1rem;">
-                                <div class="main-menu__main-menu-box">
-                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                </div>
+                              
                                 <div class="main-menu__search-and-nav-sidebar-icon-box">
                                     <div class="main-menu__nav-sidebar-icon">
                                         <a class="navSidebar-button" href="#">
@@ -202,13 +199,13 @@
             
  
 
-        <section class="we-serve">
+        <section class="we-serve" id="marcas">
             <div class="container">
                 <div class="section-title text-center">
                     <div class="section-title__tagline-box">
                         <span class="section-title__tagline">Nuestras marcas</span>
                     </div>
-                    <h2 class="section-title__title">LO QUE HACEMOS</h2>
+                    <h2 class="section-title__title">Lo que hacemos</h2>
                 </div>
                 <div class="we-serve__main-tab-box tabs-box">
                     <div class="row">
@@ -249,10 +246,10 @@
                         <div class="col-xl-9">
                             <div class="tabs-content">
                                 <!-- Anigpack Tab -->
-                                <div class="tab active-tab" id="anigpack">
-                                    <div class="we-serve__right">
-                                        <div class="we-serve__content-box">
-                                            <div class="we-serve__content-left">
+                                <div class="tab active-tab" id="anigpack" >
+                                    <div class="we-serve__right" >
+                                        <div class="we-serve__content-box" style="background-color:rgba(255, 115, 0, 0.308)">
+                                            <div class="we-serve__content-left" >
                                                 <span class="we-serve__content-tagline anigpackColor">SOBRE ANIGPACK</span>
                                                 <h2 class="we-serve__content-title">Empaques para la industria alimenticia</h2>
                                                 <p class="we-serve__text">Soluciones de empaques únicos, adaptados a todos los tamaños de proyectos para proteger alimentos y que estén disponibles para todos.</p>
@@ -279,7 +276,7 @@
                                 <!-- Herdam Tab -->
                                 <div class="tab" id="herdam">
                                     <div class="we-serve__right">
-                                        <div class="we-serve__content-box">
+                                        <div class="we-serve__content-box" style="background-color:#af202a52">
                                             <div class="we-serve__content-left">
                                                 <span class="we-serve__content-tagline herdamColor">SOBRE HERDAM 
                                                 </span>
@@ -318,7 +315,7 @@
                                 <!-- Nabel Tab -->
                                 <div class="tab" id="nabel">
                                     <div class="we-serve__right">
-                                        <div class="we-serve__content-box">
+                                        <div class="we-serve__content-box" style="background-color:#db184f70">
                                             <div class="we-serve__content-left">
                                                 <span class="we-serve__content-tagline">SOBRE NABEL</span>
                                                 <h2 class="we-serve__content-title">Investigación + desarrollo en insumos alimenticios.</h2>
@@ -357,13 +354,13 @@
        
 
         <!--About One Start -->
-        <section class="about-one" style="margin-bottom: 5rem;">
+        <section class="about-one" style="margin-bottom: 5rem;" id="nosotros">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="about-one__img">
-                                <img style="width: 500px;"  src="assets/images/resources/somosNabel.svg" alt="Innovación y Calidad">
+                                <img  src="assets/images/resources/somosNabel.png" alt="Innovación y Calidad">
                                 
                                
                             </div>
@@ -375,7 +372,7 @@
                                 <div class="section-title__tagline-box">
                                     <span class="section-title__tagline" style="color:white;">Nosotros</span>
                                 </div>
-                                <h2 class="section-title__title2" style="text-align: center; color: white; padding-top: 10px;">QUIÉNES SOMOS</h2>
+                                <h2 class="section-title__title2" style="text-align: center; color: white; padding-top: 10px;">Quiénes somos</h2>
                             </div>
                             <div class="about-one__content">
                                 <p class="about-one__text-1">
@@ -490,23 +487,23 @@
        
         <section class="our-approach">
             <div class="container">
-                <h2 class="section-title__title">NUESTRO ENFOQUE</h2>
+                <h2 class="section-title__title">Nuestro enfoque</h2>
                 <div class="our-approach__grid">
                     <div class="our-approach__item">
                         <img src="assets/images/resources/nabelChecks.png" alt="Innovación y Calidad" class="our-approach__icon">
-                        <h3 class="our-approach__subtitle">Innovación y Calidad</h3>
+                        <h3 class="our-approach__subtitle">Investigación + desarrollo aplicado  (I + D)</h3>
                     </div>
                     <div class="our-approach__item">
                         <img src="assets/images/resources/nabelChecks.png" alt="Mejora Continua" class="our-approach__icon">
-                        <h3 class="our-approach__subtitle">Mejora Continua</h3>
+                        <h3 class="our-approach__subtitle">Mejora continua</h3>
                     </div>
                     <div class="our-approach__item">
                         <img src="assets/images/resources/nabelChecks.png" alt="Ética, Pasión y Profesionalismo" class="our-approach__icon">
-                        <h3 class="our-approach__subtitle">Ética, Pasión y Profesionalismo</h3>
+                        <h3 class="our-approach__subtitle">Ética, pasión y profesionalismo</h3>
                     </div>
                     <div class="our-approach__item">
                         <img src="assets/images/resources/nabelChecks.png" alt="Sustentabilidad y Creatividad" class="our-approach__icon">
-                        <h3 class="our-approach__subtitle">Sustentabilidad y Creatividad</h3>
+                        <h3 class="our-approach__subtitle">Sustentabilidad y creatividad</h3>
                     </div>
                 </div>
             </div>
@@ -514,7 +511,7 @@
      
 
         <!-- Contact One Start -->
-        <section class="contact-one margenSeguro">
+        <section class="contact-one margenSeguro" id="contacto">
             <div class="contact-one__wrap">
                 
                 <div class="contact-one__shape-3">
@@ -693,21 +690,10 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">ejemplo@nabel.com</a>
-                </li>
-                <li>
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="mailto:needhelp@packageName__.com">infonabel@nabelsrl.com.ar</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__top">
-                <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                </div><!-- /.mobile-nav__social -->
-            </div><!-- /.mobile-nav__top -->
+          
 
 
 

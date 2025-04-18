@@ -214,70 +214,46 @@ ul {
 }
 
 .section-title__title {
-  font-size: 59px;
+  font-size: 49px;
   line-height: 57px;
   font-weight: 700;
-  text-transform: capitalize;
   margin: 14px 0 0;
   letter-spacing: -1.2px;
 
   background: linear-gradient(
-    90deg,
-    #e01751,
-    #eb3b73,
-    #f58dad,
-    #e01751,
-    #eb6a8f,
-    #e01751
+    135deg,
+    #E01751 0%,
+    #ee4178 50%,
+    #ee4178 50%,
+    #FFFFFF 60%
   );
   background-size: 200%;
   background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  animation: shine 5s linear infinite; /* opcional: reflejo en movimiento */
 }
 
-@keyframes shine {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
+
 .section-title__title2 {
-  font-size: 59px;
+  font-size: 49px;
   line-height: 57px;
   font-weight: 700;
-  text-transform: capitalize;
   margin: 14px 0 0;
   letter-spacing: -1.2px;
 
   background: linear-gradient(
-    90deg,
-    #ffe6f0,
-    #121212,
-    #fff5fa,
-    #fbd3e0,
-    #ffe6f0
+    135deg,
+    #7c7b7b 0%,
+    #ee4178 10%,
+    #ee4178 10%,
+    #FFFFFF 60%
   );
   background-size: 200%;
   background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  animation: shine 5s linear infinite; /* opcional: reflejo en movimiento */
 }
 
-@keyframes shine {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
 
 .section-title__title span {
   color: var(--maroof-base);
@@ -674,6 +650,7 @@ ul {
   border: none;
   outline: none;
   transition: all 500ms ease;
+  border-radius: 1rem;
 }
 
 .xs-sidebar-group .content-inner .form-inner .form-group .form-inner__btn {
@@ -2458,7 +2435,6 @@ border-color: 1px solid #ff8d40;
 .tab-buttons li {
   padding: 0.8em 1.75em;
   background-color: transparent;
-  border-radius: 6px;
   border: .3px solid var(--color);
   transition: .5s;
   position: relative;
@@ -2470,6 +2446,7 @@ border-color: 1px solid #ff8d40;
   font-family: 'Roboto', 'Segoe UI', sans-serif;
   text-transform: uppercase;
   color: var(--color);
+  border-radius: 1rem;
 }
 
 /* Estilos específicos para cada botón */
@@ -2531,4 +2508,10 @@ border-color: 1px solid #ff8d40;
 .tab-buttons li:active {
   filter: brightness(.7);
   transform: scale(.98);
+}
+
+
+
+.redondeadoBorde{
+  border-radius: 3rem;
 }

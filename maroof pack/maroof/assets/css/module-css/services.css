@@ -511,6 +511,8 @@
 
 .services-four__wrap .section-title__title {
     color: var(--maroof-white);
+    text-transform: none; /* o uppercase si querés forzarlo */
+
 }
 
 .services-four__carousel {

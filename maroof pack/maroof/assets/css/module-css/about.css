@@ -9,11 +9,12 @@
     z-index: 1;
     background: linear-gradient(
         to top right,
-        #e3005b 0%,
-        #ffe5ede5 100%
+        #ffffff 0%,
+        #e3005b 100%
     );
     background-attachment: fixed; /* Opcional: efecto parallax */
 }
+
 .about-one__left {
     position: relative;
     display: block;
@@ -21,7 +22,7 @@
     margin-right: 144px;
 }
 
-.about-one__img {
+.about-one__img  {
     position: relative;
     display: block;
     z-index: 1;
@@ -29,6 +30,7 @@
 
 .about-one__img img {
     width: 100%;
+    
 }
 
 .about-one__shape-1 {

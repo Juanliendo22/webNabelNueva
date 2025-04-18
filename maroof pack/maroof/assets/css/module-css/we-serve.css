@@ -125,12 +125,13 @@
 .we-serve__points-box li {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 15px;
 }
 
 .we-serve__points-box li+li {
     margin-top: 10px;
+    align-items: start;
 }
 
 .we-serve__points-box li .icon {
