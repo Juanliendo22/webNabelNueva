@@ -357,7 +357,6 @@
 /* 🎯 Cambiar fondo en pantallas más pequeñas */
 @media (max-width: 1024px) {
     .about-one {
-      background: #fc3786; /* Fondo sólido */
       background-attachment: scroll; /* Opcional: desactiva el parallax en mobile */
     }
   }

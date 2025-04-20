@@ -30,7 +30,9 @@
 
 .about-one__img img {
     width: 100%;
-    
+    max-width: 120%; /* Aumenta el tamaño máximo al 120% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Opcional: asegura que la imagen se ajuste bien */
 }
 
 .about-one__shape-1 {

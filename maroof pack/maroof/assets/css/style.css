@@ -242,11 +242,11 @@ ul {
   letter-spacing: -1.2px;
 
   background: linear-gradient(
-    135deg,
-    #7c7b7b 0%,
+    340deg,
+    #414040 0%,
     #ee4178 10%,
-    #ee4178 10%,
-    #FFFFFF 60%
+    #e46990 10%,
+    #ee4178 60%
   );
   background-size: 200%;
   background-position: center;
@@ -835,9 +835,7 @@ ul {
   background-color: var(--maroof-black);
 }
 
-.stricky-header .main-menu__wrapper-inner {
-  padding: 19px 0;
-}
+
 
 
 .main-menu .main-menu__list,
@@ -2419,10 +2417,18 @@ ul {
   color:#af202a;
   border-color: 1px solid #af202a;
 }
+.herdamColor2{
+  color:#81010a;
+  border-color: 1px solid #af202a;
+}
 
 
 .nabelColor{
   color:#e01751;
+  border-color: 1px solid #e01751;
+}
+.nabelColor2{
+  color:#f80046;
   border-color: 1px solid #e01751;
 }
 
@@ -2430,6 +2436,11 @@ ul {
   color:#ff8d40;
 border-color: 1px solid #ff8d40;
 }
+.anigpackColor2{
+  color:#f56e14;
+border-color: 1px solid #ff8d40;
+}
+
 
 /* Clase BASE para todos los botones (evita repetir código) */
 .tab-buttons li {
@@ -2514,4 +2525,36 @@ border-color: 1px solid #ff8d40;
 
 .redondeadoBorde{
   border-radius: 3rem;
+}
+
+
+/* Mover las flechas del carrusel hacia abajo */
+#missionVisionCarousel .carousel-controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Ajusta el margen según sea necesario */
+}
+
+#missionVisionCarousel .carousel-control-prev,
+#missionVisionCarousel .carousel-control-next {
+  position: static;
+  margin: 0 10px; /* Espaciado entre las flechas */
+}
+
+#missionVisionCarousel .carousel-control-prev-icon,
+#missionVisionCarousel .carousel-control-next-icon {
+  width: 30px; /* Ajusta el tamaño del icono */
+  height: 30px;
+}
+
+.bgAbout{
+  background: 
+  url('../images/resources/quienessomos.png') no-repeat center center;
+background-size: cover; 
+background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
 }

@@ -55,7 +55,7 @@
 .contact-one__input-box input[type="email"] {
     height: 60px;
     width: 100%;
-    background-color: rgba(var(--maroof-black-rgb), .33);
+    background-color: #e0185146;
     border: 2px solid rgba(var(--maroof-white-rgb), .20);
     padding-left: 20px;
     padding-right: 20px;
@@ -74,7 +74,7 @@
 .contact-one__input-box .nice-select {
     height: 60px;
     width: 100%;
-    background-color: rgba(var(--maroof-black-rgb), .33);
+    background-color: #e0185146;
     border: 2px solid rgba(var(--maroof-white-rgb), .20);
     padding-left: 20px;
     padding-right: 20px;
@@ -108,7 +108,7 @@
     position: relative;
     height: 130px;
     width: 100%;
-    background-color: rgba(var(--maroof-black-rgb), .33);
+    background-color: #e0185146;
     border: 2px solid rgba(var(--maroof-white-rgb), .20);
     padding-top: 10px;
     padding-left: 20px;
@@ -134,7 +134,8 @@
 
 .contact-one__btn {
     border: none !important;
-    background-color: var(--maroof-white) !important;
+    background-color: #E01852;
+    color: white !important;
 }
 
 .contact-one__right {

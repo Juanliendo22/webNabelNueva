@@ -4,7 +4,7 @@
 .site-footer {
     position: relative;
     display: block;
-    background: linear-gradient(to bottom, #525151, #aaaaaa);
+    background-color: #121212;
     overflow: hidden;
     z-index: 1;
 }
@@ -103,6 +103,7 @@
     color: rgba(var(--maroof-white-rgb), .90);
     margin-top: 30px;
     margin-bottom: 28px;
+    text-align: center;
 }
 
 .footer-widget__social {

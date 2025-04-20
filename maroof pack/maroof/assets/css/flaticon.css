@@ -82,7 +82,8 @@
 
 .icon-cheack:before {
   content: "\e90c";
-  color: white;
+  color: #E01852;
+  margin: 4px;
   
 }
 
@@ -116,6 +117,7 @@
 
 .icon-dubble-arrow-right:before {
   content: "\e914";
+  color: white;
 }
 
 .icon-engineer:before {
