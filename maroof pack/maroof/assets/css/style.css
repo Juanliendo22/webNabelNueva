@@ -192,6 +192,7 @@ ul {
   display: block;
   margin-bottom: 58px;
   margin-top: -3px;
+  margin-left:20px;
 }
 
 .section-title__tagline-box {
@@ -212,7 +213,6 @@ ul {
   padding: 8px 20px 6px;
   border-radius: 14px;
 }
-
 .section-title__title {
   font-size: 49px;
   line-height: 57px;
@@ -220,19 +220,12 @@ ul {
   margin: 14px 0 0;
   letter-spacing: -1.2px;
 
-  background: linear-gradient(
-    135deg,
-    #E01751 0%,
-    #ee4178 50%,
-    #ee4178 50%,
-    #FFFFFF 60%
-  );
-  background-size: 200%;
+  background: linear-gradient(1deg, #E01751 0%, #ee4178 30%, #fffdfd 100%);
+  background-size: 100%;
   background-position: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .section-title__title2 {
   font-size: 49px;
@@ -2265,8 +2258,9 @@ ul {
   margin: 0;
   padding: 0;
   border: none;
+  padding: 10px;
+  border-radius:0rem 3rem;
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
   .custom-row {
@@ -2454,11 +2448,13 @@ border-color: 1px solid #ff8d40;
   z-index: 1;
   font-weight: 300;
   font-size: 17px;
-  font-family: 'Roboto', 'Segoe UI', sans-serif;
   text-transform: uppercase;
   color: var(--color);
   border-radius: 1rem;
+  text-align: center;
 }
+
+
 
 /* Estilos específicos para cada botón */
 .btn1 {
@@ -2544,8 +2540,8 @@ border-color: 1px solid #ff8d40;
 
 #missionVisionCarousel .carousel-control-prev-icon,
 #missionVisionCarousel .carousel-control-next-icon {
-  width: 30px; /* Ajusta el tamaño del icono */
-  height: 30px;
+  background-color: #E01751; /* Cambia el color de fondo a negro */
+  border-radius: 10px;
 }
 
 .bgAbout{
@@ -2557,4 +2553,41 @@ background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
+}
+
+
+
+/* Estilos para los enlaces de la clase sidebar-links */
+.sidebar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links ul li {
+  margin-bottom: 10px; /* Espaciado entre los enlaces */
+}
+
+.sidebar-links ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff; /* Color del texto */
+  padding: 10px 15px;
+  background-color: #1a1a1a; /* Fondo oscuro */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease;
+  text-align: center; /* Centrar el texto */
+}
+
+.sidebar-links ul li a:hover {
+  background-color: #db184f; /* Fondo rojo al pasar el cursor */
+  color: #ffffff; /* Color del texto al pasar el cursor */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.sidebar-links ul li a:active {
+  background-color: #ffffff; /* Fondo blanco al hacer clic */
+  color: #db184f; /* Texto rojo al hacer clic */
 }
