@@ -233,8 +233,13 @@ ul {
   font-weight: 700;
   margin: 14px 0 0;
   letter-spacing: -1.2px;
-color:#ff3971;
- 
+  background: linear-gradient(235deg, #e01751, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-shadow: 1px 1px 2px #e9004273; /* Agrega un leve sombreado para mejorar la legibilidad */
+
 }
 
 
@@ -2568,7 +2573,7 @@ background-attachment: scroll;
   background-color: #1a1a1a; /* Fondo oscuro */
   border-radius: 5px; /* Bordes redondeados */
   transition: all 0.3s ease;
-  text-align: center; /* Centrar el texto */
+  text-align: start; /* Centrar el texto */
 }
 
 .sidebar-links ul li a:hover {
@@ -2580,4 +2585,14 @@ background-attachment: scroll;
 .sidebar-links ul li a:active {
   background-color: #ffffff; /* Fondo blanco al hacer clic */
   color: #db184f; /* Texto rojo al hacer clic */
+}
+
+
+.paddingCajas{
+  padding: 10px;
+}
+
+
+.menosMargen{
+  margin-top: -50px;
 }
