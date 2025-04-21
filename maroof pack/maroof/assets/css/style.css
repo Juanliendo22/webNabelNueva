@@ -233,18 +233,8 @@ ul {
   font-weight: 700;
   margin: 14px 0 0;
   letter-spacing: -1.2px;
-
-  background: linear-gradient(
-    340deg,
-    #414040 0%,
-    #ee4178 10%,
-    #e46990 10%,
-    #ee4178 60%
-  );
-  background-size: 200%;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color:#ff3971;
+ 
 }
 
 
@@ -844,6 +834,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   display: none;
+text-transform: none;
 }
 
 
@@ -885,7 +876,6 @@ ul {
   align-items: center;
   color: var(--maroof-black);
   font-weight: 500;
-  text-transform: capitalize;
   position: relative;
   padding: 2px 20px;
   border-radius: 17px;
@@ -2326,7 +2316,7 @@ ul {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin-top: 50px;
-  background-color: #cfcfcf70;
+  background-color: #fcdfea;
 }
 
 .our-approach__item:hover {

@@ -137,7 +137,7 @@
     color: var(--maroof-white);
     font-weight: 900;
     line-height: 80px;
-    text-transform: capitalize;
+
     opacity: 0;
     transition: transform 1200ms ease, opacity 1200ms ease;
     transform: translateX(-200px);
@@ -745,7 +745,7 @@
     color: var(--maroof-white);
     font-weight: 900;
     line-height: 80px;
-    text-transform: capitalize;
+
 }
 
 .banner-one__title .color-text {
