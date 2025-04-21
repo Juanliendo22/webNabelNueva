@@ -2321,7 +2321,7 @@ text-transform: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   margin-top: 50px;
-  background-color: #fcdfea;
+  background-color: #d4d3d3;
 }
 
 .our-approach__item:hover {
@@ -2336,7 +2336,7 @@ text-transform: none;
 
 .our-approach__subtitle {
   font-size: 1.25rem;
-  color: #e01751;
+  color: #121212;
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -2454,50 +2454,24 @@ border-color: 1px solid #ff8d40;
 /* Estilos específicos para cada botón */
 .btn1 {
   --color: #FD7E14;
-  --color2:#ffffff;
+  --color2:#000000;
   margin: 1rem;
 }
 
 .btn2 {
   --color: #DB1850; /* Ejemplo: rojo coral */
-  --color2: rgb(255, 255, 255);
+  --color2: rgb(0, 0, 0);
   margin: 1rem;
 
 }
 
 .btn3 {
   --color: #AF202A; /* Ejemplo: azul violeta */
-  --color2: rgb(255, 255, 255);
+  --color2: rgb(0, 0, 0);
   margin: 1rem;
 
 }
 
-/* Pseudo-elementos COMUNES (para todos los botones) */
-.tab-buttons li::after, 
-.tab-buttons li::before {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  transform: skew(90deg) translate(-50%, -50%);
-  position: absolute;
-  inset: 50%;
-  left: 25%;
-  z-index: -1;
-  transition: .5s ease-out;
-  background-color: var(--color);
-}
-
-.tab-buttons li::before {
-  top: -50%;
-  left: -25%;
-  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-}
-
-/* Estados hover/active COMUNES */
-.tab-buttons li:hover::before {
-  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-}
 
 .tab-buttons li:hover::after {
   transform: skew(45deg) translate(-50%, -50%);
