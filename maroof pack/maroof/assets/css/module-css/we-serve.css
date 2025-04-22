@@ -21,6 +21,7 @@
 .we-serve__main-tab-box .tab-buttons {
     position: relative;
     display: block;
+    margin-top: 50px;
 }
 
 .we-serve__main-tab-box .tab-buttons .tab-btn {

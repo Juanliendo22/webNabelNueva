@@ -47,7 +47,10 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: var(--maroof-gray);
+  cursor: url('../images/resources/nabelChecks.png'), auto;
+
 }
+
 
 body.locked {
   overflow: hidden;
@@ -2445,7 +2448,7 @@ border-color: 1px solid #ff8d40;
   font-size: 17px;
   text-transform: uppercase;
   color: var(--color);
-  border-radius: 1rem;
+  border-radius: 3rem;
   text-align: center;
 }
 
