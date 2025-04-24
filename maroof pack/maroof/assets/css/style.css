@@ -2412,18 +2412,38 @@ text-transform: none;
 }
 
 .accordion-button {
-  background-color: #666666; /* gris oscuro */
-  color: white;
+  background-color: #a705054b; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  color: #333; /* Texto oscuro */
   font-weight: bold;
-  border: none;
+  border: 1px solid #ddd; /* Borde sutil */
+  padding: 15px; /* Espaciado interno */
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #a70505; /* azul Bootstrap */
-  color: white;
-  box-shadow: none;
+  background-color: #a70505; /* Fondo destacado */
+  color: white; /* Texto blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
+.accordion-button:hover {
+  background-color: #a70505; /* Fondo más oscuro al pasar el cursor */
+  color: white; /* Texto blanco */
+  transform: translateY(-2px); /* Efecto de elevación */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.accordion-body {
+  background-color: #f8f9fa; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 10px; /* Separación entre el contenido */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
 
 
 .herdamColor{
@@ -2494,6 +2514,12 @@ border-color: 1px solid #ff8d40;
   --color2: rgb(0, 0, 0);
   margin: 1rem;
 
+}
+
+.herdamBtn{
+  --color: #AF202A; /* Ejemplo: azul violeta */
+  --color2: rgb(0, 0, 0);
+  margin: 1rem;
 }
 
 
