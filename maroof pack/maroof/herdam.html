@@ -71,52 +71,69 @@
 
 
 
-    <!-- Start sidebar widget content -->
-    <div class="xs-sidebar-group info-group info-sidebar">
-        <div class="xs-overlay xs-bg-black"></div>
-        <div class="xs-sidebar-widget">
-            <div class="sidebar-widget-container">
-                <div class="widget-heading">
-                    <a href="#" class="close-side-widget">X</a>
-                </div>
-                <div class="sidebar-textwidget">
-                    <div class="sidebar-info-contents">
-                        <div class="content-inner">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/images/resources/logo-1.png" alt="" /></a>
-                            </div>
-                            <div class="content-box">
-                                <h4>About Us</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
-                                    labore et magna aliqua.</p>
-                            </div>
-                            <div class="form-inner">
-                                <h4>Get a free quote</h4>
-                                <form action="assets/inc/sendemail.php" class="contact-form-validated"
-                                    novalidate="novalidate">
-                                    <div class="form-group">
-                                        <input type="text" name="name" placeholder="Name" required="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email" required="">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="message" placeholder="Message..."></textarea>
-                                    </div>
-                                    <div class="form-group message-btn">
-                                        <button type="submit" class="thm-btn form-inner__btn">Submit Now</button>
-                                    </div>
-                                </form>
-                                <div class="result"></div>
-                            </div>
+  <!-- Start sidebar widget content -->
+<div class="xs-sidebar-group info-group info-sidebar">
+    <div class="xs-overlay xs-bg-black"></div>
+    <div class="xs-sidebar-widget">
+        <div class="sidebar-widget-container">
+            <div class="widget-heading">
+                <a href="#" class="close-side-widget">X</a>
+            </div>
+            <div class="sidebar-textwidget">
+                <div class="sidebar-info-contents">
+                    <div class="content-inner">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/resources/logo-2.png" alt="" /></a>
                         </div>
+                        <div class="sidebar-links">
+                            <ul class="main-menu__list" style="margin-top: 50px;">
+                                <li>
+                                    <a href="index.html">Inicio </a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="#marcas">Nuestras marcas</a>
+                                </li>
+                                <li>
+                                    <a href="#nosotros">Nosotros</a>
+                                <li >
+                                    <a href="#contacto">Contacto</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="content-box">
+                            <h4>Contacto</h4>
+                            <p>Contáctanos. <br>
+                                Nosotros te asesoramos </p>
+                        </div>
+                        <div class="form-inner">
+                            <h4>Rellene los campos</h4>
+                            <form action="assets/inc/sendemail.php" class="contact-form-validated"
+                                novalidate="novalidate">
+                                <div class="form-group ">
+                                    <input type="text" name="name" placeholder="Nombre/Razón social" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Correo -E-mail" required="">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Consulta"></textarea>
+                                </div>
+                                <div class="form-group message-btn">
+                                    <button type="submit" class="thm-btn form-inner__btn">Enviar</button>
+                                </div>
+                            </form>
+                            <div class="result"></div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End sidebar widget content -->
-
+</div>
+<!-- End sidebar widget content -->
 
 
 
@@ -209,6 +226,30 @@
                             </div>
                         </div>
                     </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const images = document.querySelectorAll('.category-img');
+                            const aboutSections = document.querySelectorAll('.about-three');
+                    
+                            images.forEach(image => {
+                                image.addEventListener('click', () => {
+                                    const category = image.getAttribute('data-category');
+                    
+                                    // Hide all about sections
+                                    aboutSections.forEach(section => section.style.display = 'none');
+                    
+                                    // Show the selected about section
+                                    const activeAbout = document.getElementById(`about-${category}`);
+                                    if (activeAbout) {
+                                        activeAbout.style.display = 'block';
+                    
+                                        // Scroll to the section
+                                        activeAbout.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </section>
@@ -216,15 +257,15 @@
         <section class="about-three" id="about-grampas" style="display: none;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
-                        <div class="about-three__right">
+                    <div class="col-xl-12 "
+                        <div class="about-three__right ">
                             <div class="section-title text-left">
-                                <h2 class="section-title__title">Consumibles</h2>
-                                <p>Descripción de los consumibles, como grampas, clips y otros productos relacionados.</p>
+                                <h2 class="titleHerdam herdamColor">Consumibles</h2>
+                                <p>Compatibilidad de excelencia en todas las soluciones para cierre de envases, asegurando inocuidad, seguridad e higiene de los productos alimenticios, garantizando calidad y eficiencia en el trabajo, reducción del desgaste de maquinarias y sus componentes, mejorando así la rentabilidad de los procesos.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
                         <div class="services-five__carousel owl-theme owl-carousel">
                             <div class="item">
                                 <div class="services-five__img-box">
@@ -243,21 +284,121 @@
                         </div>
                     </div>
                 </div>
+                <div class="container margenSup">
+                    <div class="row">
+                        <!-- Botones en la mitad izquierda -->
+                        <div class="col-xl-6">
+                            <ul class="tab-buttons list-unstyled">
+                                <li data-product="product1" class="herdamBtn active-btn"><span style="color: black;">Clips</span></li>
+                                <li data-product="product2" class="herdamBtn"><span style="color: black;">Grampas R</span></li>
+                                <li data-product="product3" class="herdamBtn"><span style="color: black;">Gazas y Lazos</span></li>
+                                <li data-product="product4" class="herdamBtn"><span style="color: black;">Hilo para Atadoras</span></li>
+                                <li data-product="product5" class="herdamBtn"><span style="color: black;">Ganchos Plásticos</span></li>
+                            </ul>
+                        </div>
+                        <!-- Contenido dinámico en la mitad derecha -->
+                        <div class="col-xl-6">
+                            <div id="product-content">
+                                <h2>Selecciona un producto</h2>
+                                <p>Haz clic en un botón para ver la descripción y la imagen del producto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const buttons = document.querySelectorAll('.herdamBtn');
+                        const content = document.getElementById('product-content');
+                
+                        const productData = {
+                            product1: {
+                                title: 'Clips',
+                                description: 'Presentación: tira y/o carretel.-<br>Amplia variedad de clips en tira y carretel para cierre de tripas, bolsas, mallas y otros tipos de envases.-<br>Compatibles en distintas maquinarias manuales, semiautomáticas y automáticas.-<br> Consulte medidas disponibles.-',
+                                image: 'assets/images/resources/banner-one-img-1-1.jpg',
+                                emailSubject: 'Consulta sobre Clips',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Clips.'
+                            },
+                            product2: {
+                                title: 'Grampas R',
+                                description: 'Presentación: carretel.<br>Amplia variedad de grampas continuas, producidas según estándares adaptables a diferentes maquinarias.<br>Compatibles con diferentes modelos de clipeadoras automáticas.<br>Consulte medidas disponibles.',
+                                image: 'assets/images/products/grampas.jpg',
+                                emailSubject: 'Consulta sobre Grampas R',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Grampas R.'
+                            },
+                            product3: {
+                                title: 'Gazas y Lazos',
+                                description: 'Presentación: sueltos y/o rollos.<br>Amplia variedad de gazas y lazos disponibles en distintos colores y presentaciones.<br>Compatibles con clipeadora manual, semiautomática y automáticas.<br>Aplicación: para colgar productos envasados en secaderos, hornos de cocción y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +11 Kg.<br>Consulte medidas disponibles.',
+                                image: 'assets/images/products/gazas.jpg',
+                                emailSubject: 'Consulta sobre Gazas y Lazos',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Gazas y Lazos.'
+                            },
+                            product4: {
+                                title: 'Hilo para Atadoras',
+                                description: 'Presentación: con núcleo y sin núcleo.<br>Fabricado en hilo de alta resistencia, variedad de colores.<br>Compatibilidad en atadoras semiautomáticas y automáticas.<br>Aplicación: chorizo fresco, salame, morcilla, etc.',
+                                image: 'assets/images/products/hilo.jpg',
+                                emailSubject: 'Consulta sobre Hilo para Atadoras',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Hilo para Atadoras.'
+                            },
+                            product5: {
+                                title: 'Ganchos Plásticos',
+                                description: 'Presentación: Cuello de cisne y comunes.<br>Variedad de colores para diferenciación de productos.<br>Aplicación: para colgar productos envasados en secaderos y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +17 Kg.',
+                                image: 'assets/images/products/ganchos.jpg',
+                                emailSubject: 'Consulta sobre Ganchos Plásticos',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Ganchos Plásticos.'
+                            }
+                        };
+                
+                        buttons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                // Remover clases activas de todos los botones
+                                buttons.forEach(btn => btn.classList.remove('active-btn'));
+                
+                                // Agregar clase activa al botón seleccionado
+                                button.classList.add('active-btn');
+                
+                                // Actualizar el contenido dinámico
+                                const productKey = button.getAttribute('data-product');
+                                const product = productData[productKey];
+                
+                                if (product) {
+                                    content.innerHTML = `
+                                        <h2>${product.title}</h2>
+                                        <p>${product.description}</p>
+                                        <div style="text-align: center;">
+                                            <img src="${product.image}" alt="${product.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                                        </div>
+                                        <div style="text-align: center; margin-top: 1rem;">
+                                            <a href="mailto:infonabel@nabelsrl.com.ar?subject=${encodeURIComponent(product.emailSubject)}&body=${encodeURIComponent(product.emailBody)}" 
+                                            class="btn btn-primary" 
+                                            style="background-color: #af202a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                                            Consultar medidas por Gmail
+                                            </a>
+                                        </div>
+                                    `;
+                                }
+                            });
+                        });
+                
+                        // Activar el primer botón por defecto
+                        buttons[0].click();
+                    });
+                </script>
             </div>
         </section>
         
         <section class="about-three" id="about-maquinas" style="display: none;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
                         <div class="about-three__right">
                             <div class="section-title text-left">
-                                <h2 class="section-title__title">Máquinas</h2>
-                                <p>Descripción de las máquinas, como cortadoras, mezcladoras y embuchadoras.</p>
+                                <h2 class="titleHerdam ">Máquinas</h2>
+                                <p>Proveemos maquinarias y herramientas específicas para el sector cárnico y otras industrias.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
                         <div class="services-five__carousel owl-theme owl-carousel">
                             <div class="item">
                                 <div class="services-five__img-box">
@@ -276,21 +417,169 @@
                         </div>
                     </div>
                 </div>
+                <div class="container margenSup">
+                    <div class="row">
+                        <!-- Botones en la mitad izquierda -->
+                        <div class="col-xl-6">
+                            <ul class="tab-buttons list-unstyled">
+                                <li data-machine="machine1" class="herdamBtn active-btn"><span style="color: black;">Cutter</span></li>
+                                <li data-machine="machine2" class="herdamBtn"><span style="color: black;">Picadoras de Carne</span></li>
+                                <li data-machine="machine3" class="herdamBtn"><span style="color: black;">Mezcladoras</span></li>
+                                <li data-machine="machine4" class="herdamBtn"><span style="color: black;">Embutidoras</span></li>
+                                <li data-machine="machine5" class="herdamBtn"><span style="color: black;">Embuchadoras</span></li>
+                                <li data-machine="machine6" class="herdamBtn"><span style="color: black;">Cubeteadoras</span></li>
+                                <li data-machine="machine7" class="herdamBtn"><span style="color: black;">Clipeadoras</span></li>
+                                <li data-machine="machine8" class="herdamBtn"><span style="color: black;">Feteadoras</span></li>
+                                <li data-machine="machine9" class="herdamBtn"><span style="color: black;">Envasadoras al Vacío</span></li>
+                                <li data-machine="machine10" class="herdamBtn"><span style="color: black;">Molinos para Granos</span></li>
+                                <li data-machine="machine11" class="herdamBtn"><span style="color: black;">Atadoras de Embutidos</span></li>
+                            </ul>
+                        </div>
+                        <!-- Contenido dinámico en la mitad derecha -->
+                        <div class="col-xl-6">
+                            <div id="machine-content">
+                                <h2>Selecciona una máquina</h2>
+                                <p>Haz clic en un botón para ver la descripción y la imagen de la máquina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const buttons = document.querySelectorAll('.herdamBtn');
+                        const content = document.getElementById('machine-content');
+                
+                        const machineData = {
+                            machine1: {
+                                title: 'Cutter',
+                                description: 'Desde pequeñas unidades para producción artesanal, hasta grandes equipos industriales de cientos de litros.<br>Capacidad variable: desde 15 Lts. hasta 750 Lts.<br>Aplicaciones:<br>• Producción de fiambres emulsificados.<br>• Preparación de masas cárnicas homogéneas.<br>• Mezcla de ingredientes y condimentos con la carne.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/cutter.jpg',
+                                emailSubject: 'Consulta sobre Cutter',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Cutter.'
+                            },
+                            machine2: {
+                                title: 'Picadoras de Carne',
+                                description: 'Maquinaria fundamental en el procesamiento cárnico, utilizada para triturar y homogeneizar cortes de carne.<br>Capacidad variable según el modelo.<br>Aplicaciones:<br>• Industria frigorífica.<br>• Producción de alimentos preparados.<br>• Elaboración de embutidos.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/picadora.jpg',
+                                emailSubject: 'Consulta sobre Picadoras de Carne',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Picadoras de Carne.'
+                            },
+                            machine3: {
+                                title: 'Mezcladoras',
+                                description: 'Maquinaria que se utiliza para integrar carne y otros ingredientes de manera homogénea.<br>Capacidad variable según el modelo (desde 60 Lts – 1200 Lts).<br>Aplicaciones:<br>• Homogeneizar la mezcla de carne con ingredientes.<br>• Asegurar una distribución uniforme de componentes.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/mezcladora.jpg',
+                                emailSubject: 'Consulta sobre Mezcladoras',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Mezcladoras.'
+                            },
+                            machine4: {
+                                title: 'Embutidoras',
+                                description: 'Máquinas utilizadas para llenar tripas naturales o artificiales con diferentes tipos de mezclas cárnicas.<br>Aplicaciones:<br>• Llenado de tripas con la mezcla cárnica preparada.<br>• Control de porciones, peso y tamaño del embutido.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/embutidora.jpg',
+                                emailSubject: 'Consulta sobre Embutidoras',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Embutidoras.'
+                            },
+                            machine5: {
+                                title: 'Embuchadoras',
+                                description: 'Máquina que se utiliza para embutir músculo completo en distintos tipos de tripas.<br>Aplicaciones:<br>• Bondiola.<br>• Lomo.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/embuchadora.jpg',
+                                emailSubject: 'Consulta sobre Embuchadoras',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Embuchadoras.'
+                            },
+                            machine6: {
+                                title: 'Cubeteadoras',
+                                description: 'Máquina diseñada para cortar productos alimenticios en cubos o dados de un tamaño específico.<br>Aplicaciones:<br>• Preparación de carne para estofados.<br>• Producción de embutidos.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/cubeteadora.jpg',
+                                emailSubject: 'Consulta sobre Cubeteadoras',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Cubeteadoras.'
+                            },
+                            machine7: {
+                                title: 'Clipeadoras',
+                                description: 'Máquinas utilizadas para cerrar o sellar productos alimenticios con clips metálicos.<br>Aplicaciones:<br>• Aseguran un cierre hermético e higiénico.<br>• Aumentan la velocidad de producción.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/clipeadora.jpg',
+                                emailSubject: 'Consulta sobre Clipeadoras',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Clipeadoras.'
+                            },
+                            machine8: {
+                                title: 'Feteadoras',
+                                description: 'Máquinas que se usan para cortar carnes, quesos y embutidos en rebanadas uniformes.<br>Aplicaciones:<br>• Procesamiento de carnes frías.<br>• Corte de quesos.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/feteadora.jpg',
+                                emailSubject: 'Consulta sobre Feteadoras',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Feteadoras.'
+                            },
+                            machine9: {
+                                title: 'Envasadoras al Vacío',
+                                description: 'Máquina que se utiliza para extraer el aire de una bolsa o envase y sellarla herméticamente.<br>Aplicaciones:<br>• Conservación de alimentos.<br>• Empaque al vacío.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/envasadora.jpg',
+                                emailSubject: 'Consulta sobre Envasadoras al Vacío',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Envasadoras al Vacío.'
+                            },
+                            machine10: {
+                                title: 'Molinos para Granos',
+                                description: 'Molinos diseñados para obtener la granulometría adecuada según el producto final.<br>Aplicaciones:<br>• Procesamiento de café, pimienta o especias.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/molino.jpg',
+                                emailSubject: 'Consulta sobre Molinos para Granos',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Molinos para Granos.'
+                            },
+                            machine11: {
+                                title: 'Atadoras de Embutidos',
+                                description: 'Maquinaria que divide el embutido en porciones uniformes y de forma rápida.<br>Aplicaciones:<br>• Producción de chorizos, salames y salchichas.<br>Consultar modelos disponibles.',
+                                image: 'assets/images/machines/atadora.jpg',
+                                emailSubject: 'Consulta sobre Atadoras de Embutidos',
+                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Atadoras de Embutidos.'
+                            }
+                        };
+                
+                        buttons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                // Remover clases activas de todos los botones
+                                buttons.forEach(btn => btn.classList.remove('active-btn'));
+                
+                                // Agregar clase activa al botón seleccionado
+                                button.classList.add('active-btn');
+                
+                                // Actualizar el contenido dinámico
+                                const machineKey = button.getAttribute('data-machine');
+                                const machine = machineData[machineKey];
+                
+                                if (machine) {
+                                    content.innerHTML = `
+                                        <h2>${machine.title}</h2>
+                                        <p>${machine.description}</p>
+                                        <div style="text-align: center;">
+                                            <img src="${machine.image}" alt="${machine.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                                        </div>
+                                        <div style="text-align: center; margin-top: 1rem;">
+                                            <a href="mailto:infonabel@nabelsrl.com.ar?subject=${encodeURIComponent(machine.emailSubject)}&body=${encodeURIComponent(machine.emailBody)}" 
+                                               class="btn btn-primary" 
+                                               style="background-color: #af202a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                                               Consultar modelos por Gmail
+                                            </a>
+                                        </div>
+                                    `;
+                                }
+                            });
+                        });
+                
+                        // Activar el primer botón por defecto
+                        buttons[0].click();
+                    });
+                </script>
             </div>
         </section>
         
         <section class="about-three" id="about-repuestos" style="display: none;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
                         <div class="about-three__right">
                             <div class="section-title text-left">
-                                <h2 class="section-title__title">Repuestos</h2>
-                                <p>Descripción de los repuestos, como discos, cuchillas y accesorios para máquinas.</p>
+                                <h2 class="titleHerdam herdamColor">Repuestos</h2>
+                                <p>Repuestos y asesoramiento técnico garantizando soluciones adaptadas a sus requerimientos (diseñamos y fabricamos piezas especiales a medida).</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
                         <div class="services-five__carousel owl-theme owl-carousel">
                             <div class="item">
                                 <div class="services-five__img-box">
@@ -309,6 +598,90 @@
                         </div>
                     </div>
                 </div>
+                <div class="container margenSup">
+                    <div class="row">
+                        <!-- Botones en la mitad izquierda -->
+                        <div class="col-xl-6">
+                            <ul class="tab-buttons list-unstyled">
+                                <li data-repuesto="repuesto1" class="herdamBtn active-btn"><span style="color: black;">Para Emulsores</span></li>
+                                <li data-repuesto="repuesto2" class="herdamBtn"><span style="color: black;">Para Picadoras</span></li>
+                                <li data-repuesto="repuesto3" class="herdamBtn"><span style="color: black;">Cuchillas Descuereadora</span></li>
+                            </ul>
+                        </div>
+                        <!-- Contenido dinámico en la mitad derecha -->
+                        <div class="col-xl-6">
+                            <div id="repuesto-content">
+                                <h2>Selecciona un repuesto</h2>
+                                <p>Haz clic en un botón para ver la descripción y la imagen del repuesto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const buttons = document.querySelectorAll('.herdamBtn');
+                        const content = document.getElementById('repuesto-content');
+                
+                        const repuestoData = {
+                            repuesto1: {
+                                title: 'Para Emulsores',
+                                description: '• Discos - grillas<br>• Insertos<br>Compatibles con maquinarias:<br>VVS (triple cabezal), COZZINI, KS, WOLFKING, INOTEC, HERDAM<br>Consulte medidas disponibles.',
+                                image: 'assets/images/repuestos/emulsores.jpg',
+                                emailSubject: 'Consulta sobre Repuestos para Emulsores',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para repuestos de emulsores.'
+                            },
+                            repuesto2: {
+                                title: 'Para Picadoras',
+                                description: '• Discos/grillas: desnervadores/destroncadores<br>• Cuchillas: simples/dobles<br>Compatibles con maquinarias:<br>KRAMER GREBE, LASKA, KILIA, NOWITZKI<br>Consulte medidas disponibles.',
+                                image: 'assets/images/repuestos/picadoras.jpg',
+                                emailSubject: 'Consulta sobre Repuestos para Picadoras',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para repuestos de picadoras.'
+                            },
+                            repuesto3: {
+                                title: 'Cuchillas Descuereadora / Descortezadora',
+                                description: 'Amplia variedad de medidas para diferentes maquinarias según requerimiento.<br>Consulte medidas disponibles.',
+                                image: 'assets/images/repuestos/cuchillas.jpg',
+                                emailSubject: 'Consulta sobre Cuchillas Descuereadora / Descortezadora',
+                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para cuchillas descuereadora/descortezadora.'
+                            }
+                        };
+                
+                        buttons.forEach(button => {
+                            button.addEventListener('click', () => {
+                                // Remover clases activas de todos los botones
+                                buttons.forEach(btn => btn.classList.remove('active-btn'));
+                
+                                // Agregar clase activa al botón seleccionado
+                                button.classList.add('active-btn');
+                
+                                // Actualizar el contenido dinámico
+                                const repuestoKey = button.getAttribute('data-repuesto');
+                                const repuesto = repuestoData[repuestoKey];
+                
+                                if (repuesto) {
+                                    content.innerHTML = `
+                                        <h2>${repuesto.title}</h2>
+                                        <p>${repuesto.description}</p>
+                                        <div style="text-align: center;">
+                                            <img src="${repuesto.image}" alt="${repuesto.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                                        </div>
+                                        <div style="text-align: center; margin-top: 1rem;">
+                                            <a href="mailto:infonabel@nabelsrl.com.ar?subject=${encodeURIComponent(repuesto.emailSubject)}&body=${encodeURIComponent(repuesto.emailBody)}" 
+                                               class="btn btn-primary" 
+                                               style="background-color: #af202a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                                               Consultar medidas por Gmail
+                                            </a>
+                                        </div>
+                                    `;
+                                }
+                            });
+                        });
+                
+                        // Activar el primer botón por defecto
+                        buttons[0].click();
+                    });
+                </script>
             </div>
         </section>
         <script>
@@ -336,382 +709,9 @@
 
 
 
-<section class="we-serve" id="marcas">
-    <div class="container">
-        
-        <div class="we-serve__main-tab-box tabs-box">
-            <div class="row">
-                <div class="col-xl-3">
-                    <div class="we-serve__left menosMargen" >
-                        
-                        <ul class="tab-buttons list-unstyled">
-                            <li data-tab="#grampas" class="herdamBtn"><span style="color: black;">Consumibles</span></li>
-                            <li data-tab="#maquinas" class="herdamBtn"><span style="color: black;">Maquinaria</span></li>
-                            <li data-tab="#repuestos" class="herdamBtn"><span style="color: black;">Repuestos</span></li>
-                        </ul>
-                       <script>document.addEventListener('DOMContentLoaded', function() {
-                        const tabButtons = document.querySelectorAll('.tab-buttons li');
-                        
-                        tabButtons.forEach(button => {
-                          button.addEventListener('click', function() {
-                            // Remover clases activas
-                            document.querySelectorAll('.tab').forEach(tab => {
-                              tab.classList.remove('active-tab');
-                            });
-                            tabButtons.forEach(btn => {
-                              btn.classList.remove('active-btn');
-                            });
-                            
-                            // Activar la pestaña y botón correspondiente
-                            const tabId = this.getAttribute('data-tab');
-                            document.querySelector(tabId).classList.add('active-tab');
-                            this.classList.add('active-btn');
-                          });
-                        });
-                        
-                        // Activar primera pestaña por defecto
-                        tabButtons[0].click();
-                      });</script>
-                            
-                    </div>
-                </div>
-                <div class="col-xl-9">
-                    <div class="we-serve__main-tab-box tabs-box">
-                        <div class="tabs-content">
-                            <!-- Consumibles -->
-                            <div class="tab active-tab" id="grampas">
-                                <div class="accordion" id="accordionGrampas">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas1" aria-expanded="true" aria-controls="collapseGrampas1">
-                                                CLIPS EN TIRA
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas1" class="accordion-collapse collapse show" aria-labelledby="headingGrampas1" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Clips en tira para aplicaciones rápidas y eficientes.</p>
-                                                <img src="assets/images/resources/banner-one-img-1-1.jpg" alt="Clips en Tira" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas2" aria-expanded="false" aria-controls="collapseGrampas2">
-                                                CLIPS EN ROLLO
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas2" class="accordion-collapse collapse" aria-labelledby="headingGrampas2" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Clips en rollo para grandes volúmenes de producción.</p>
-                                                <img src="assets/images/consumibles/clips-en-rollo.jpg" alt="Clips en Rollo" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas3" aria-expanded="false" aria-controls="collapseGrampas3">
-                                                CLIPS EN CARRETE
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas3" class="accordion-collapse collapse" aria-labelledby="headingGrampas3" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Clips en carrete para aplicaciones específicas.</p>
-                                                <img src="assets/images/consumibles/clips-en-carrete.jpg" alt="Clips en Carrete" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas4" aria-expanded="false" aria-controls="collapseGrampas4">
-                                                GRAMPAS EN CARRETE
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas4" class="accordion-collapse collapse" aria-labelledby="headingGrampas4" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Grampas en carrete para aplicaciones industriales.</p>
-                                                <img src="assets/images/consumibles/grampas-en-carrete.jpg" alt="Grampas en Carrete" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas5">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas5" aria-expanded="false" aria-controls="collapseGrampas5">
-                                                GAZAS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas5" class="accordion-collapse collapse" aria-labelledby="headingGrampas5" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Gazas de alta calidad para diversas aplicaciones.</p>
-                                                <img src="assets/images/consumibles/gazas.jpg" alt="Gazas" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas6">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas6" aria-expanded="false" aria-controls="collapseGrampas6">
-                                                LAZOS SUELTOS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas6" class="accordion-collapse collapse" aria-labelledby="headingGrampas6" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Lazos sueltos para cierres rápidos y seguros.</p>
-                                                <img src="assets/images/consumibles/lazos-sueltos.jpg" alt="Lazos Sueltos" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas7">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas7" aria-expanded="false" aria-controls="collapseGrampas7">
-                                                HILOS PARA ATADORAS (CON NÚCLEO Y SIN NÚCLEO)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas7" class="accordion-collapse collapse" aria-labelledby="headingGrampas7" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Hilos resistentes para atadoras, disponibles con núcleo y sin núcleo.</p>
-                                                <img src="assets/images/consumibles/hilos-para-atadoras.jpg" alt="Hilos para Atadoras" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingGrampas8">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrampas8" aria-expanded="false" aria-controls="collapseGrampas8">
-                                                GANCHOS PLÁSTICOS CHORICEROS (COMUNES Y CUELLO DE CISNE)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseGrampas8" class="accordion-collapse collapse" aria-labelledby="headingGrampas8" data-bs-parent="#accordionGrampas">
-                                            <div class="accordion-body">
-                                                <p>Ganchos plásticos choriceros en versiones comunes y con cuello de cisne.</p>
-                                                <img src="assets/images/consumibles/ganchos-plasticos.jpg" alt="Ganchos Plásticos Choriceros" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Máquinas -->
-                            <div class="tab" id="maquinas">
-                                <div class="accordion" id="accordionMaquinas">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas1" aria-expanded="true" aria-controls="collapseMaquinas1">
-                                                CUTTER
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas1" class="accordion-collapse collapse show" aria-labelledby="headingMaquinas1" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Cutter de alta precisión para cortes industriales.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas2" aria-expanded="false" aria-controls="collapseMaquinas2">
-                                                PICADORAS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas2" class="accordion-collapse collapse" aria-labelledby="headingMaquinas2" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Picadoras industriales para carne y otros alimentos.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas3" aria-expanded="false" aria-controls="collapseMaquinas3">
-                                                MEZCLADORAS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas3" class="accordion-collapse collapse" aria-labelledby="headingMaquinas3" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Mezcladoras de alta capacidad para procesos industriales.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas4" aria-expanded="false" aria-controls="collapseMaquinas4">
-                                                EMBUCHADORAS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas4" class="accordion-collapse collapse" aria-labelledby="headingMaquinas4" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Embuchadoras para producción eficiente de embutidos.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas5">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas5" aria-expanded="false" aria-controls="collapseMaquinas5">
-                                                CUBETEADORAS/TOCINERA/CORTADORA DE BIFES
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas5" class="accordion-collapse collapse" aria-labelledby="headingMaquinas5" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Máquinas versátiles para cortar carne en cubos, lonchas o bifes.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas6">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas6" aria-expanded="false" aria-controls="collapseMaquinas6">
-                                                OLLAS PARA TERMOCONTRACCIÓN
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas6" class="accordion-collapse collapse" aria-labelledby="headingMaquinas6" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Ollas diseñadas para procesos de termocontracción en alimentos.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas7">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas7" aria-expanded="false" aria-controls="collapseMaquinas7">
-                                                CLIPEADORAS (SIMPLES, DOBLES, CON ESTIRADOR, NEUMÁTICAS/MANUALES)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas7" class="accordion-collapse collapse" aria-labelledby="headingMaquinas7" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Amplia gama de clipeadoras para diferentes necesidades de producción.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas8">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas8" aria-expanded="false" aria-controls="collapseMaquinas8">
-                                                FETEADORAS (AUTOMÁTICAS Y SEMIAUTOMÁTICAS)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas8" class="accordion-collapse collapse" aria-labelledby="headingMaquinas8" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Feteadoras para cortes precisos y uniformes.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas9">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas9" aria-expanded="false" aria-controls="collapseMaquinas9">
-                                                MOLINOS PARA PICAR GRANOS (PIMIENTA, ESPECIAS VARIAS)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas9" class="accordion-collapse collapse" aria-labelledby="headingMaquinas9" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Molinos especializados para procesar granos y especias.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingMaquinas10">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaquinas10" aria-expanded="false" aria-controls="collapseMaquinas10">
-                                                ATADORAS DE EMBUTIDOS (AUTOMÁTICAS/SEMIAUTOMÁTICAS)
-                                            </button>
-                                        </h2>
-                                        <div id="collapseMaquinas10" class="accordion-collapse collapse" aria-labelledby="headingMaquinas10" data-bs-parent="#accordionMaquinas">
-                                            <div class="accordion-body">
-                                                Atadoras de embutidos para optimizar la producción.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Repuestos -->
-                            <div class="tab" id="repuestos">
-                                <div class="accordion" id="accordionRepuestos">
-                                    <!-- PARA EMULSIONES -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingRepuestos1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepuestos1" aria-expanded="true" aria-controls="collapseRepuestos1">
-                                                PARA EMULSIONES
-                                            </button>
-                                        </h2>
-                                        <div id="collapseRepuestos1" class="accordion-collapse collapse show" aria-labelledby="headingRepuestos1" data-bs-parent="#accordionRepuestos">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>VVS (Triple Cabezal)</li>
-                                                    <li>Cozzini</li>
-                                                    <li>KS</li>
-                                                    <li>Wolfking</li>
-                                                    <li>Inotec</li>
-                                                    <li>Herdam</li>
-                                                </ul>
-                                                <p>Accesorios:</p>
-                                                <ul>
-                                                    <li>Discos/Grillas</li>
-                                                    <li>Insertos</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- PARA PICADORAS -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingRepuestos2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepuestos2" aria-expanded="false" aria-controls="collapseRepuestos2">
-                                                PARA PICADORAS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseRepuestos2" class="accordion-collapse collapse" aria-labelledby="headingRepuestos2" data-bs-parent="#accordionRepuestos">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Kramer Grebe</li>
-                                                    <li>Laska</li>
-                                                    <li>Kilia</li>
-                                                    <li>Nowitzki</li>
-                                                </ul>
-                                                <p>Accesorios:</p>
-                                                <ul>
-                                                    <li>Discos/Grillas</li>
-                                                    <li>Desvenadores/Destronocadores</li>
-                                                    <li>Cuchillas Simples/Doble Filo</li>
-                                                    <li>Punteras</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- OTROS REPUESTOS -->
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingRepuestos3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRepuestos3" aria-expanded="false" aria-controls="collapseRepuestos3">
-                                                OTROS REPUESTOS
-                                            </button>
-                                        </h2>
-                                        <div id="collapseRepuestos3" class="accordion-collapse collapse" aria-labelledby="headingRepuestos3" data-bs-parent="#accordionRepuestos">
-                                            <div class="accordion-body">
-                                                Repuestos originales para diversas máquinas y herramientas.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
         
        
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const images = document.querySelectorAll('.category-img');
-                const tabs = document.querySelectorAll('.tab');
-        
-                images.forEach(image => {
-                    image.addEventListener('click', () => {
-                        const category = image.getAttribute('data-category');
-        
-                        // Remove active class from all tabs
-                        tabs.forEach(tab => tab.classList.remove('active-tab'));
-        
-                        // Add active class to the selected tab
-                        const activeTab = document.getElementById(category);
-                        if (activeTab) {
-                            activeTab.classList.add('active-tab');
-                        }
-                    });
-                });
-            });
-        </script>
+       
 
         <!--Brand One Start-->
         <section class="brand-one brand-two">
@@ -761,9 +761,8 @@
                         <img  src="assets/images/resources/ctaHerdam.png" alt="CTA Image">
                     </div>
                     <div class="cta-two__content">
-                        <h3 class="cta-two__title">Soluciones confiables para tu producción</h3>
-                        <p class="cta-two__text">Somos líderes en sistemas de cierre y maquinaria industrial. Descubrí por qué las principales empresas eligen nuestros productos para optimizar su línea de producción.
-                        </p>
+                        <h3 class="cta-two__title">Soluciones de confianza para tu línea de producción.</h3>
+                        <p class="cta-two__text">Conoce nuestros productos y contáctanos para optimizar procesos.</p>
                         <div class="cta-two__btn-box">
                             <a href="productos.html" class="cta-two__btn thm-btn-two">Consultanos vía Whatsapp<span
                                     class="icon-dubble-arrow-right"></span></a>
@@ -779,8 +778,7 @@
 
     <!--Site Footer Two Start-->
 <footer class="site-footer-two">
-    <div class="site-footer-two__bg-shape float-bob-y"
-        style="background-image: url(assets/images/backgrounds/site-footer-bg.png);"></div>
+  
     <div class="site-footer-two__top">
         <div class="container">
             <div class="site-footer-two__top-inner">
