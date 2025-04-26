@@ -359,6 +359,14 @@
     overflow: hidden;
     z-index: 1;
 }
+.site-footer-twoNb {
+    position: relative;
+    display: block;
+    background-color: #868484;
+    margin-top: -164px;
+    overflow: hidden;
+    z-index: 1;
+}
 
 .site-footer-two__bg-shape {
     position: absolute;
