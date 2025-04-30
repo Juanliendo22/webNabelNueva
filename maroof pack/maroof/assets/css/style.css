@@ -2526,25 +2526,30 @@ border-color: 1px solid #ff8d40;
 /* From Uiverse.io by mrhyddenn */ 
 .buttonNabelPersonal {
   position: relative;
-  padding: 10px 20px;
-  border-radius: 7px;
+  padding: 20px 20px; /* Aumenta el tamaño del botón */
+  border-radius: 10px;                                 
   border: 1px solid #DB1850;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  background: transparent;
-  color: #000000;
+  background: #db184f6b;
+  color: #ffffff;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  text-align: center; /* Centra el texto */
+  width: 100px; /* Define un ancho fijo para que sea más cuadrado */
+  height: 100px; /* Define una altura fija para que sea más cuadrado */
+  display: inline-block; /* Asegura que se comporte como un bloque en línea */
 }
 
 .buttonNabelPersonal:hover {
   background:#DB1850;
   box-shadow: 0 0 30px 5px #DB1850;
+  color: white;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

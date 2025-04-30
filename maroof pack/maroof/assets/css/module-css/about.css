@@ -177,6 +177,7 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 5;
+    
 }
 
 .about-one__main-tab-box .tab-buttons .tab-btn+.tab-btn {

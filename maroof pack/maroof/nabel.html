@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Herdam || Nabel SRL </title>
+    <title> Nabel || Nabel SRL </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/resources/ctaHerdam.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/resources/ctaHerdam.png" />
@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
-<body>
+<body >
 
 
 
@@ -186,10 +186,17 @@
             </nav>
         </header>
 
+     
+
         <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
-        <section class="project-four">
+        <section class="project-four" style="background-image: url(assets/images/backgrounds/bgNabel.png); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        height: 100vh; 
+        margin: 0;">
             <div class="container" style="margin-top: 10rem;">
                 <div class="section-title text-center">
                     <img src="./assets/images/resources/logo-1.png" alt="">
@@ -240,28 +247,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="WR">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="container margenSup">
                     <div class="row">
                         <!-- Botones en la mitad izquierda -->
                         <div class="col-xl-6">
                             <ul class="tab-buttons list-unstyled">
-                                <li data-wr="wr1" class="nabelBtn active-btn"><span style="color: black;">WR Cocidos</span></li>
-                                <li data-wr="wr2" class="nabelBtn"><span style="color: black;">WR Secos Embutidos</span></li>
-                                <li data-wr="wr3" class="nabelBtn"><span style="color: black;">WR Secos No Embutidos</span></li>
-                                <li data-wr="wr4" class="nabelBtn"><span style="color: black;">WR Frescos Embutidos</span></li>
-                                <li data-wr="wr5" class="nabelBtn"><span style="color: black;">WR Frescos No Embutidos</span></li>
+                                <li data-wr="wr1" class="nabelBtn active-btn"><span style="color: black;">WR cocidos</span></li>
+                                <li data-wr="wr2" class="nabelBtn"><span style="color: black;">WR secos embutidos</span></li>
+                                <li data-wr="wr3" class="nabelBtn"><span style="color: black;">WR secos no embutidos</span></li>
+                                <li data-wr="wr4" class="nabelBtn"><span style="color: black;">WR frescos embutidos</span></li>
+                                <li data-wr="wr5" class="nabelBtn"><span style="color: black;">WR frescos no embutidos</span></li>
                             </ul>
                         </div>
                         <!-- Contenido dinámico en la mitad derecha -->
@@ -280,7 +277,7 @@
         
                         const wrData = {
                             wr1: {
-                                title: 'WR Cocidos',
+                                title: 'WR cocidos',
                                 description: `
                                     Formulaciones integrales para la elaboración de:
                                     <ul>
@@ -297,7 +294,7 @@
                                 `
                             },
                             wr2: {
-                                title: 'WR Secos Embutidos',
+                                title: 'WR secos embutidos',
                                 description: `
                                     Formulaciones integrales para la elaboración de:
                                     <ul>
@@ -313,7 +310,7 @@
                                 `
                             },
                             wr3: {
-                                title: 'WR Secos No Embutidos',
+                                title: 'WR secos no embutidos',
                                 description: `
                                     Formulaciones integrales para la elaboración de:
                                     <ul>
@@ -325,7 +322,7 @@
                                 `
                             },
                             wr4: {
-                                title: 'WR Frescos Embutidos',
+                                title: 'WR frescos embutidos',
                                 description: `
                                     Formulaciones integrales para la elaboración de:
                                     <ul>
@@ -339,7 +336,7 @@
                                 `
                             },
                             wr5: {
-                                title: 'WR Frescos No Embutidos',
+                                title: 'WR frescos no embutidos',
                                 description: `
                                     Formulaciones integrales para la elaboración de:
                                     <ul>
@@ -387,28 +384,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Polifosfatos">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="container margenSup">
                     <div class="row">
                         <!-- Botones en la mitad izquierda -->
                         <div class="col-xl-6">
                             <ul class="tab-buttons list-unstyled">
-                                <li data-polifosfato="polifosfato1" class="nabelBtn active-btn"><span style="color: black;">WR Polifosfato Frescos</span></li>
-                                <li data-polifosfato="polifosfato2" class="nabelBtn"><span style="color: black;">WR Polifosfato Secos</span></li>
-                                <li data-polifosfato="polifosfato3" class="nabelBtn"><span style="color: black;">WR Polifosfato Cocidos</span></li>
-                                <li data-polifosfato="polifosfato4" class="nabelBtn"><span style="color: black;">WR Polifosfato Cocidos (Salmuera)</span></li>
-                            </ul>
+                                <li data-polifosfato="polifosfato1" class="nabelBtn active-btn"><span style="color: black;">Wr polifosfato frescos</span></li>
+                                <li data-polifosfato="polifosfato2" class="nabelBtn"><span style="color: black;">Wr polifosfato secos</span></li>
+                                <li data-polifosfato="polifosfato3" class="nabelBtn"><span style="color: black;">Wr polifosfato cocidos</span></li>
+                                <li data-polifosfato="polifosfato4" class="nabelBtn"><span style="color: black;">Wr polifosfato cocidos (salmuera)</span></li>
+                             </ul>
                         </div>
                         <!-- Contenido dinámico en la mitad derecha -->
                         <div class="col-xl-6">
@@ -426,7 +413,7 @@
         
                         const polifosfatoData = {
                             polifosfato1: {
-                                title: 'WR Polifosfato Frescos',
+                                title: 'WR polifosfato frescos',
                                 description: `
                                     Formulado con un pH óptimo para elaborar productos frescos embutidos y no embutidos.
                                     <ul>
@@ -438,7 +425,7 @@
                                 `
                             },
                             polifosfato2: {
-                                title: 'WR Polifosfato Secos',
+                                title: 'WR polifosfato secos',
                                 description: `
                                     Formulado con un pH óptimo para elaborar productos secos.
                                     <ul>
@@ -454,7 +441,7 @@
                                 `
                             },
                             polifosfato3: {
-                                title: 'WR Polifosfato Cocidos',
+                                title: 'WR polifosfato cocidos',
                                 description: `
                                     Formulado con un pH óptimo para elaborar productos cocidos.
                                     <ul>
@@ -469,7 +456,7 @@
                                 `
                             },
                             polifosfato4: {
-                                title: 'WR Polifosfato Cocidos (Salmuera)',
+                                title: 'WR polifosfato cocidos (Salmuera)',
                                 description: `
                                     Formulado con un pH óptimo para elaborar productos cocidos.
                                     <ul>
@@ -516,17 +503,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Antioxidantes">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="container margenSup">
                     <div class="row">
@@ -555,7 +532,7 @@
         
                         const antioxidanteData = {
                             antioxidante1: {
-                                title: 'WR Antioxidantes Frescos',
+                                title: 'WR antioxidantes frescos',
                                 description: `
                                     Formulado para elaborar productos frescos embutidos y no embutidos.
                                     <ul>
@@ -567,7 +544,7 @@
                                 `
                             },
                             antioxidante2: {
-                                title: 'WR Antioxidantes Secos',
+                                title: 'WR antioxidantes secos',
                                 description: `
                                     Formulado para elaborar productos secos.
                                     <ul>
@@ -583,7 +560,7 @@
                                 `
                             },
                             antioxidante3: {
-                                title: 'WR Antioxidantes Cocidos',
+                                title: 'WR antioxidantes cocidos',
                                 description: `
                                     Formulado para elaborar productos cocidos.
                                     <ul>
@@ -598,7 +575,7 @@
                                 `
                             },
                             antioxidante4: {
-                                title: 'WR Antioxidantes Cocidos (Salmuera)',
+                                title: 'WR antioxidantes cocidos (Salmuera)',
                                 description: `
                                     Formulado para elaborar productos cocidos.
                                     <ul>
@@ -645,17 +622,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Carrageninas">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="container margenSup">
                     <div class="row">
@@ -681,7 +648,7 @@
         
                         const carrageninaData = {
                             carragenina1: {
-                                title: 'WR Gel',
+                                title: 'WR gel',
                                 description: `
                                     Formuladas a base de carrageninas: kappa, iota, lambda.
                                     <ul>
@@ -733,17 +700,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Proteínas de Soja">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="container margenSup">
                     <div class="row">
@@ -772,7 +729,7 @@
         
                         const sojaData = {
                             soja1: {
-                                title: 'Harina de Soja',
+                                title: 'Harina de soja',
                                 description: `
                                     Contiene alrededor del 50% de proteína.
                                     <ul>
@@ -783,7 +740,7 @@
                                 `
                             },
                             soja2: {
-                                title: 'Concentrado de Proteína de Soja',
+                                title: 'Concentrado de proteína de soja',
                                 description: `
                                     Contiene 65–70% de proteína.
                                     <ul>
@@ -794,7 +751,7 @@
                                 `
                             },
                             soja3: {
-                                title: 'Aislado de Proteína de Soja',
+                                title: 'Aislado de proteína de soja',
                                 description: `
                                     Contiene hasta 90% de proteína.
                                     <ul>
@@ -805,7 +762,7 @@
                                 `
                             },
                             soja4: {
-                                title: 'Proteína Texturizada de Soja',
+                                title: 'Proteína texturizada de soja',
                                 description: `
                                     Hecha a partir de harina o concentrado de soja.
                                     <ul>
@@ -852,17 +809,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Colorantes">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="container margenSup">
                     <div class="row">
@@ -890,7 +837,7 @@
         
                         const coloranteData = {
                             colorante1: {
-                                title: 'Colorante Carmín',
+                                title: 'Colorante carmín',
                                 description: `
                                     Solución al 3% (a solicitud del cliente).
                                     <ul>
@@ -905,7 +852,7 @@
                                 `
                             },
                             colorante2: {
-                                title: 'Colorante Vegetal',
+                                title: 'Colorante vegetal',
                                 description: `
                                     Pigmento natural que se obtiene de plantas y se usa para dar color.
                                     <ul>
@@ -920,7 +867,7 @@
                                 `
                             },
                             colorante3: {
-                                title: 'Colorante Salame',
+                                title: 'Colorante salame',
                                 description: `
                                     Mezcla equilibrada para dar color de carne curada.
                                     <ul>
@@ -973,17 +920,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Humos">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="container margenSup">
                     <div class="row">
@@ -1013,7 +950,7 @@
         
                         const humoData = {
                             humo1: {
-                                title: 'Humo Acuoso y Emulsificado',
+                                title: 'Humo acuoso y emulsificado',
                                 description: `
                                     Aplicaciones:
                                     <ul>
@@ -1110,17 +1047,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="services-five__carousel owl-theme owl-carousel">
-                            <div class="item">
-                                <div class="services-five__img-box">
-                                    <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Materias Primas">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="container margenSup">
                     <div class="row">
@@ -1329,21 +1256,21 @@
                                 emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Grampas R.'
                             },
                             product3: {
-                                title: 'Gazas y Lazos',
+                                title: 'Gazas y lazos',
                                 description: 'Presentación: sueltos y/o rollos.<br>Amplia variedad de gazas y lazos disponibles en distintos colores y presentaciones.<br>Compatibles con clipeadora manual, semiautomática y automáticas.<br>Aplicación: para colgar productos envasados en secaderos, hornos de cocción y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +11 Kg.<br>Consulte medidas disponibles.',
                                 image: 'assets/images/products/gazas.jpg',
                                 emailSubject: 'Consulta sobre Gazas y Lazos',
                                 emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Gazas y Lazos.'
                             },
                             product4: {
-                                title: 'Hilo para Atadoras',
+                                title: 'Hilo para atadoras',
                                 description: 'Presentación: con núcleo y sin núcleo.<br>Fabricado en hilo de alta resistencia, variedad de colores.<br>Compatibilidad en atadoras semiautomáticas y automáticas.<br>Aplicación: chorizo fresco, salame, morcilla, etc.',
                                 image: 'assets/images/products/hilo.jpg',
                                 emailSubject: 'Consulta sobre Hilo para Atadoras',
                                 emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Hilo para Atadoras.'
                             },
                             product5: {
-                                title: 'Ganchos Plásticos',
+                                title: 'Ganchos plásticos',
                                 description: 'Presentación: Cuello de cisne y comunes.<br>Variedad de colores para diferenciación de productos.<br>Aplicación: para colgar productos envasados en secaderos y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +17 Kg.',
                                 image: 'assets/images/products/ganchos.jpg',
                                 emailSubject: 'Consulta sobre Ganchos Plásticos',
@@ -1763,8 +1690,8 @@
                         <img  src="assets/images/resources/footerLogo.png" alt="CTA Image">
                     </div>
                     <div class="cta-two__content">
-                        <h3 class="cta-two__title">Soluciones de confianza para tu línea de producción.</h3>
-                        <p class="cta-two__text">Conoce nuestros productos y contáctanos para optimizar procesos.</p>
+                        <h3 class="cta-two__title">Investigación + desarrollo en insumos alimenticios </h3>
+                        <p class="cta-two__text">para que su formulación esté lo más completa, funcional y competitiva del mercado. <br> Solicita más información y te asesoramos.</p>
                         <div class="cta-two__btn-box">
                             <a href="productos.html" class="cta-two__btn thm-btn-two">Consultanos vía Whatsapp<span
                                     class="icon-dubble-arrow-right"></span></a>
