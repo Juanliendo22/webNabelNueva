@@ -2604,7 +2604,84 @@ border-color: 1px solid #ff8d40;
 
 }
 
+.buttonAnigpackPersonal {
+  position: relative;
+  padding: 20px 20px; /* Aumenta el tamaño del botón */
+  border-radius: 10px;                                 
+  border: 1px solid #FF8D40; /* Borde naranja */
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: rgba(255, 141, 64, 0.42); /* Fondo naranja translúcido */
+  color: #000000;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-align: center; /* Centra el texto */
+  width: 100px; /* Define un ancho fijo para que sea más cuadrado */
+  height: 100px; /* Define una altura fija para que sea más cuadrado */
+  display: inline-block; /* Asegura que se comporte como un bloque en línea */
+}
 
+.buttonAnigpackPersonal:hover {
+  background: #FF8D40; /* Fondo naranja sólido al pasar el cursor */
+  box-shadow: 0 0 30px 5px #FF8D40; /* Sombra naranja */
+  color: white;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.buttonAnigpackPersonal:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.buttonAnigpackPersonal::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.buttonAnigpackPersonal:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  background: #FF8D40; /* Fondo naranja sólido al hacer clic */
+}
 
 .herdamBtn{
   --color: #AF202A; /* Ejemplo: azul violeta */
@@ -2739,3 +2816,161 @@ background-attachment: scroll;
 .margenSup{
   margin-top: 2rem;
 }
+
+
+
+/* Estilo para la sección */
+.anigpack-section {
+  padding: 50px 20px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el título */
+.anigpack-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.anigpack-title p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.anigpack-highlight {
+  color: #FF8D40; /* Naranja */
+  font-weight: bold;
+}
+
+/* Estilo para la sección */
+.anigpack-section {
+  padding: 50px 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo claro */
+}
+
+/* Estilo para el título */
+.anigpack-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el título */
+}
+
+.anigpack-title p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto */
+}
+
+.anigpack-highlight {
+  color: #FF8D40; /* Naranja */
+  font-weight: bold;
+  display: block;
+  text-align: center; /* Centra el texto */
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+/* Estilo para la sección */
+.anigpack-section {
+  padding: 50px 20px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el título */
+.anigpack-title h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Tamaño dinámico del título */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el título */
+}
+
+.anigpack-title p {
+  font-size: clamp(0.9rem, 3vw, 1.2rem); /* Tamaño dinámico del texto */
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto */
+}
+
+.anigpack-highlight {
+  color: #FF8D40; /* Naranja */
+  font-weight: bold;
+  display: block;
+  text-align: center; /* Centra el texto */
+  line-height: 1.8;
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Tamaño dinámico del texto destacado */
+}
+
+/* Estilo para la tabla */
+.anigpack-table {
+  margin-top: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que los bordes redondeados se apliquen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho */
+}
+
+.anigpack-table-header {
+  background-color: #FF8D40; /* Fondo naranja */
+  color: #fff; /* Texto blanco */
+  font-weight: bold;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Tamaño dinámico del encabezado */
+}
+
+.anigpack-table th,
+.anigpack-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  color: #121212;
+  vertical-align: top;
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: clamp(0.8rem, 2.5vw, 1rem); /* Tamaño dinámico del contenido */
+}
+
+.anigpack-table td {
+  background-color: #fff; /* Fondo blanco */
+  color: #555; /* Texto gris oscuro */
+  line-height: 1.6;
+}
+
+/* Estilo para las listas */
+.anigpack-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.anigpack-list li {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: clamp(0.8rem, 2.5vw, 1rem); /* Tamaño dinámico de las listas */
+}
+
+/* Efecto hover en las filas */
+.anigpack-table-row:hover {
+  background-color: #f4f4f4; /* Fondo gris claro */
+  transition: background-color 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .anigpack-table {
+    display: block; /* Permite que la tabla sea desplazable horizontalmente */
+    overflow-x: auto;
+    white-space: nowrap; /* Evita que las celdas se rompan en varias líneas */
+  }
+}
+
+
+

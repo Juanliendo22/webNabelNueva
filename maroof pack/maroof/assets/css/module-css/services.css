@@ -1176,8 +1176,8 @@
 
 .service-details__service-list li:hover a,
 .service-details__service-list li.active a {
-    color: var(--maroof-white);
-    background-color: var(--maroof-black);
+    color: white;
+    background-color: #FF8D40;
 }
 
 .service-details__service-list li a span {
