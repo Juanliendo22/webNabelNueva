@@ -538,109 +538,105 @@
         </section>
      
 
-        <!-- Contact One Start -->
-        <section class="contact-one margenSeguro" id="contacto">
-            <div class="contact-one__wrap" style="background-image: url('assets/images/resources/footerImgBg.png'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                
-                <div class="contact-one__shape-3">
-                    <img src="assets/images/shapes/contact-one-shape-3.png" alt="">
-                </div>
-                <div class="contact-one__shape-4">
-                    <img src="assets/images/shapes/contact-one-shape-4.png" alt="">
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="contact-one__left">
-                                <div class="section-title text-left">
-                                    <div class="section-title__tagline-box">
-                                        <span class="section-title__tagline">Contáctanos</span>
-                                    </div>
-                                    <h2 class="section-title__title2" style="font-size: 3rem ; ">Adaptamos soluciones a tu medida</h2>
-                                </div>
-                                <form id="contactForm" class="contact-one__form">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-6">
-                                            <div class="contact-one__input-box">
-                                                <input type="text" name="name" placeholder="Tu Nombre/razón social" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6">
-                                            <div class="contact-one__input-box">
-                                                <input type="email" name="email" placeholder="Correo electrónico" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6">
-                                            <div class="contact-one__input-box">
-                                                <input type="text" name="phone" placeholder="Teléfono/ celular 
-                                                " required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6">
-                                            <div class="contact-one__input-box">
-                                                <div class="select-box">
-                                                    <select name="brand" class="selectmenu wide" required>
-                                                        <option selected="selected" disabled>Elige una marca</option>
-                                                        <option value="Nabel">Nabel</option>
-                                                        <option value="Anigpack">Anigpack</option>
-                                                        <option value="Herdam">Herdam</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="contact-one__input-box text-message-box">
-                                                <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                                            </div>
-                                            <div class="contact-one__btn-box">
-                                                <button style="margin-top: 10px;" type="button" onclick="sendToWhatsApp()" class="thm-btn-two contact-one__btn">Enviar a WhatsApp<span class="icon-dubble-arrow-right"></span></button>
-                                                <button style="margin-top: 10px;" type="button" onclick="sendToGmail()" class="thm-btn-two contact-one__btn">Enviar a Gmail<span class="icon-dubble-arrow-right"></span></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="result"></div>
+       <!-- Contact One Start -->
+<section class="contact-one margenSeguro" id="contacto">
+    <div class="contact-one__wrap" style="background-image: url('assets/images/resources/footerImgBg.png'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        <div class="contact-one__shape-3">
+            <img src="assets/images/shapes/contact-one-shape-3.png" alt="">
+        </div>
+        <div class="contact-one__shape-4">
+            <img src="assets/images/shapes/contact-one-shape-4.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact-one__left">
+                        <div class="section-title text-left">
+                            <div class="section-title__tagline-box">
+                                <span class="section-title__tagline">Contáctanos</span>
                             </div>
+                            <h2 class="section-title__title2" style="font-size: 3rem;">Adaptamos soluciones a tu medida</h2>
                         </div>
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="contact-one__right">
-                                <div class="contact-one__img wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
-                                    <img src="assets/images/resources/call.png" alt="">
-                                    
+                        <form id="contactForm" class="contact-one__form">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="contact-one__input-box">
+                                        <input type="text" name="name" placeholder="Tu Nombre/razón social" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="contact-one__input-box">
+                                        <input type="email" name="email" placeholder="Correo electrónico" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="contact-one__input-box">
+                                        <input type="text" name="phone" placeholder="Teléfono/ celular" required="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="contact-one__input-box">
+                                        <div class="select-box">
+                                            <select name="brand" class="selectmenu wide" required>
+                                                <option selected="selected" disabled>Elige una marca</option>
+                                                <option value="Nabel">Nabel</option>
+                                                <option value="Anigpack">Anigpack</option>
+                                                <option value="Herdam">Herdam</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-one__input-box text-message-box">
+                                        <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    </div>
+                                    <div class="contact-one__btn-box">
+                                        <button style="margin-top: 10px;" type="button" onclick="sendToWhatsApp()" class="thm-btn-two contact-one__btn">Enviar a WhatsApp<span class="icon-dubble-arrow-right"></span></button>
+                                        <button style="margin-top: 10px;" type="button" onclick="sendToGmail()" class="thm-btn-two contact-one__btn">Enviar a Gmail<span class="icon-dubble-arrow-right"></span></button>
+                                    </div>
                                 </div>
                             </div>
+                        </form>
+                        <div class="result"></div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact-one__right">
+                        <div class="contact-one__img wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                            <img src="assets/images/resources/call.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <script>
-                function sendToWhatsApp() {
-                    const name = document.querySelector('input[name="name"]').value;
-                    const phone = document.querySelector('input[name="phone"]').value;
-                    const brand = document.querySelector('select[name="brand"]').value;
-                    const message = document.querySelector('textarea[name="message"]').value;
-            
-                    const whatsappNumber = "123456789"; // Número de WhatsApp de ejemplo
-                    const whatsappURL = `https://wa.me/${whatsappNumber}?text=Hola, mi nombre es ${name}. Estoy interesado en la marca ${brand}. Mi número es ${phone}. Mensaje: ${message}`;
-                    window.open(whatsappURL, "_blank");
-                }
-            
-                function sendToGmail() {
-                    const name = document.querySelector('input[name="name"]').value;
-                    const email = document.querySelector('input[name="email"]').value;
-                    const brand = document.querySelector('select[name="brand"]').value;
-                    const message = document.querySelector('textarea[name="message"]').value;
-            
-                    const gmailAddress = "example@gmail.com"; // Dirección de Gmail de ejemplo
-                    const subject = `Consulta sobre ${brand}`;
-                    const body = `Hola, mi nombre es ${name}. Mi correo es ${email}. Estoy interesado en la marca ${brand}. Mensaje: ${message}`;
-                    const mailtoURL = `mailto:${gmailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                    window.open(mailtoURL, "_blank");
-                }
-            </script>
-        </section>
-        <!-- Contact One End -->
+        </div>
+    </div>
+    <script>
+        function sendToWhatsApp() {
+            const name = document.querySelector('input[name="name"]').value;
+            const phone = document.querySelector('input[name="phone"]').value;
+            const brand = document.querySelector('select[name="brand"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
 
+            const whatsappNumber = "5493512874995"; // Número de WhatsApp real
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=Hola, mi nombre es ${name}. Estoy interesado en la marca ${brand}. Mi número es ${phone}. Mensaje: ${message}`;
+            window.open(whatsappURL, "_blank");
+        }
+
+        function sendToGmail() {
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const brand = document.querySelector('select[name="brand"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+
+            const gmailAddress = "infonabel@nabel.com.ar"; // Dirección de Gmail real
+            const subject = `Consulta sobre ${brand}`;
+            const body = `Hola, mi nombre es ${name}. Mi correo es ${email}. Estoy interesado en la marca ${brand}. Mensaje: ${message}`;
+            const mailtoURL = `mailto:${gmailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.open(mailtoURL, "_blank");
+        }
+    </script>
+</section>
+<!-- Contact One End -->
        
 
        

@@ -270,17 +270,46 @@
                             <div class="item">
                                 <div class="services-five__img-box">
                                     <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Clips en Rollo">
+                                        <img src="assets/images/consumibleCarrusel/1.svg" alt="Cutter">
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="services-five__img-box">
                                     <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Gazas">
+                                        <img src="assets/images/consumibleCarrusel/2.svg" alt="Cutter">
                                     </div>
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/consumibleCarrusel/3.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/consumibleCarrusel/4.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/consumibleCarrusel/5.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/consumibleCarrusel/6.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -308,81 +337,103 @@
         
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
-                        const buttons = document.querySelectorAll('.herdamBtn');
-                        const content = document.getElementById('product-content');
-                
-                        const productData = {
-                            product1: {
-                                title: 'Clips',
-                                description: 'Presentación: tira y/o carretel.-<br>Amplia variedad de clips en tira y carretel para cierre de tripas, bolsas, mallas y otros tipos de envases.-<br>Compatibles en distintas maquinarias manuales, semiautomáticas y automáticas.-<br> Consulte medidas disponibles.-',
-                                image: 'assets/images/resources/banner-one-img-1-1.jpg',
-                                emailSubject: 'Consulta sobre Clips',
-                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Clips.'
-                            },
-                            product2: {
-                                title: 'Grampas R',
-                                description: 'Presentación: carretel.<br>Amplia variedad de grampas continuas, producidas según estándares adaptables a diferentes maquinarias.<br>Compatibles con diferentes modelos de clipeadoras automáticas.<br>Consulte medidas disponibles.',
-                                image: 'assets/images/products/grampas.jpg',
-                                emailSubject: 'Consulta sobre Grampas R',
-                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Grampas R.'
-                            },
-                            product3: {
-                                title: 'Gazas y lazos',
-                                description: 'Presentación: sueltos y/o rollos.<br>Amplia variedad de gazas y lazos disponibles en distintos colores y presentaciones.<br>Compatibles con clipeadora manual, semiautomática y automáticas.<br>Aplicación: para colgar productos envasados en secaderos, hornos de cocción y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +11 Kg.<br>Consulte medidas disponibles.',
-                                image: 'assets/images/products/gazas.jpg',
-                                emailSubject: 'Consulta sobre Gazas y Lazos',
-                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Gazas y Lazos.'
-                            },
-                            product4: {
-                                title: 'Hilo para atadoras',
-                                description: 'Presentación: con núcleo y sin núcleo.<br>Fabricado en hilo de alta resistencia, variedad de colores.<br>Compatibilidad en atadoras semiautomáticas y automáticas.<br>Aplicación: chorizo fresco, salame, morcilla, etc.',
-                                image: 'assets/images/products/hilo.jpg',
-                                emailSubject: 'Consulta sobre Hilo para Atadoras',
-                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Hilo para Atadoras.'
-                            },
-                            product5: {
-                                title: 'Ganchos plásticos',
-                                description: 'Presentación: Cuello de cisne y comunes.<br>Variedad de colores para diferenciación de productos.<br>Aplicación: para colgar productos envasados en secaderos y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +17 Kg.',
-                                image: 'assets/images/products/ganchos.jpg',
-                                emailSubject: 'Consulta sobre Ganchos Plásticos',
-                                emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Ganchos Plásticos.'
-                            }
-                        };
-                
-                        buttons.forEach(button => {
-                            button.addEventListener('click', () => {
-                                // Remover clases activas de todos los botones
-                                buttons.forEach(btn => btn.classList.remove('active-btn'));
-                
-                                // Agregar clase activa al botón seleccionado
-                                button.classList.add('active-btn');
-                
-                                // Actualizar el contenido dinámico
-                                const productKey = button.getAttribute('data-product');
-                                const product = productData[productKey];
-                
-                                if (product) {
+                    const buttons = document.querySelectorAll('.herdamBtn');
+                    const content = document.getElementById('product-content');
+
+                    const productData = {
+                        product1: {
+                            title: 'Clips',
+                            description: 'Presentación: tira y/o carretel.-<br>Amplia variedad de clips en tira y carretel para cierre de tripas, bolsas, mallas y otros tipos de envases.-<br>Compatibles en distintas maquinarias manuales, semiautomáticas y automáticas.-<br> Consulte medidas disponibles.-',
+                            image: 'assets/images/productosConsumibles/clips.svg',
+                            emailSubject: 'Consulta sobre Clips',
+                            emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Clips.'
+                        },
+                        product2: {
+                            title: 'Grampas R',
+                            description: 'Presentación: carretel.<br>Amplia variedad de grampas continuas, producidas según estándares adaptables a diferentes maquinarias.<br>Compatibles con diferentes modelos de clipeadoras automáticas.<br>Consulte medidas disponibles.',
+                            image: 'assets/images/productosConsumibles/grampasR.svg',
+                            emailSubject: 'Consulta sobre Grampas R',
+                            emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Grampas R.'
+                        },
+                        product3: {
+                            title: 'Gazas y lazos',
+                            description: 'Presentación: sueltos y/o rollos.<br>Amplia variedad de gazas y lazos disponibles en distintos colores y presentaciones.<br>Compatibles con clipeadora manual, semiautomática y automáticas.<br>Aplicación: para colgar productos envasados en secaderos, hornos de cocción y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +11 Kg.<br>Consulte medidas disponibles.',
+                            images: [
+                                'assets/images/productosConsumibles/gaza.svg',
+                                'assets/images/productosConsumibles/lazo.svg'
+                            ],
+                            emailSubject: 'Consulta sobre Gazas y Lazos',
+                            emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Gazas y Lazos.'
+                        },
+                        product4: {
+                            title: 'Hilo para atadoras',
+                            description: 'Presentación: con núcleo y sin núcleo.<br>Fabricado en hilo de alta resistencia, variedad de colores.<br>Compatibilidad en atadoras semiautomáticas y automáticas.<br>Aplicación: chorizo fresco, salame, morcilla, etc.',
+                            image: 'assets/images/productosConsumibles/hiloAtadora.svg',
+                            emailSubject: 'Consulta sobre Hilo para Atadoras',
+                            emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Hilo para Atadoras.'
+                        },
+                        product5: {
+                            title: 'Ganchos plásticos',
+                            description: 'Presentación: Cuello de cisne y comunes.<br>Variedad de colores para diferenciación de productos.<br>Aplicación: para colgar productos envasados en secaderos y exposición comercial.<br>Elaborados con material de alta resistencia.<br>Soporte de carga: +17 Kg.',
+                            image: 'assets/images/productosConsumibles/ganchoComun.svg',
+                            emailSubject: 'Consulta sobre Ganchos Plásticos',
+                            emailBody: 'Hola, me gustaría consultar sobre las medidas disponibles para Ganchos Plásticos.'
+                        }
+                    };
+
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Remover clases activas de todos los botones
+                            buttons.forEach(btn => btn.classList.remove('active-btn'));
+
+                            // Agregar clase activa al botón seleccionado
+                            button.classList.add('active-btn');
+
+                            // Actualizar el contenido dinámico
+                            const productKey = button.getAttribute('data-product');
+                            const product = productData[productKey];
+
+                            if (product) {
+                                if (product.images) {
+                                    // Crear el carrusel para múltiples imágenes
+                                    let currentIndex = 0;
+                                    const imagesHtml = `
+                                        <div id="carousel" style="text-align: center;">
+                                            <img src="${product.images[currentIndex]}" alt="${product.title}" id="carousel-image" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 10px;">
+                                        </div>
+                                    `;
+
+                                    content.innerHTML = `
+                                        <h2>${product.title}</h2>
+                                        <p>${product.description}</p>
+                                        ${imagesHtml}
+                                       
+                                    `;
+
+                                    // Configurar el carrusel automático
+                                    const carouselImage = document.getElementById('carousel-image');
+                                    setInterval(() => {
+                                        currentIndex = (currentIndex + 1) % product.images.length; // Cambiar al siguiente índice
+                                        carouselImage.src = product.images[currentIndex]; // Actualizar la imagen
+                                    }, 3000); // Cambiar cada 3 segundos
+                                } else {
+                                    // Mostrar una sola imagen
                                     content.innerHTML = `
                                         <h2>${product.title}</h2>
                                         <p>${product.description}</p>
                                         <div style="text-align: center;">
-                                            <img src="${product.image}" alt="${product.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+                                            <img src="${product.image}" alt="${product.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 10px; margin-top:30px;">
                                         </div>
-                                        <div style="text-align: center; margin-top: 1rem;">
-                                            <a href="mailto:infonabel@nabel.com.ar?subject=${encodeURIComponent(product.emailSubject)}&body=${encodeURIComponent(product.emailBody)}" 
-                                            class="btn btn-primary" 
-                                            style="background-color: #af202a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-                                            Consultar medidas por Gmail
-                                            </a>
-                                        </div>
+                                       
                                     `;
                                 }
-                            });
+                            }
                         });
-                
-                        // Activar el primer botón por defecto
-                        buttons[0].click();
                     });
+
+                    // Activar el primer botón por defecto
+                    buttons[0].click();
+                });
                 </script>
             </div>
         </section>
@@ -403,14 +454,49 @@
                             <div class="item">
                                 <div class="services-five__img-box">
                                     <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Cutter">
+                                        <img src="assets/images/maquinariaCarrusel/1.svg" alt="Cutter">
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="services-five__img-box">
                                     <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Mezcladora">
+                                        <img src="assets/images/maquinariaCarrusel/2.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/maquinariaCarrusel/3.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/maquinariaCarrusel/4.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/maquinariaCarrusel/5.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/maquinariaCarrusel/6.svg" alt="Cutter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/maquinariaCarrusel/7.svg" alt="Cutter">
                                     </div>
                                 </div>
                             </div>
@@ -447,123 +533,120 @@
         
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
-                        const buttons = document.querySelectorAll('.herdamBtn');
-                        const content = document.getElementById('machine-content');
-                
-                        const machineData = {
-                            machine1: {
-                                title: 'Cutter',
-                                description: 'Desde pequeñas unidades para producción artesanal, hasta grandes equipos industriales de cientos de litros.<br>Capacidad variable: desde 15 Lts. hasta 750 Lts.<br>Aplicaciones:<br>• Producción de fiambres emulsificados.<br>• Preparación de masas cárnicas homogéneas.<br>• Mezcla de ingredientes y condimentos con la carne.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/cutter.jpg',
-                                emailSubject: 'Consulta sobre Cutter',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Cutter.'
-                            },
-                            machine2: {
-                                title: 'Picadoras de carne',
-                                description: 'Maquinaria fundamental en el procesamiento cárnico, utilizada para triturar y homogeneizar cortes de carne.<br>Capacidad variable según el modelo.<br>Aplicaciones:<br>• Industria frigorífica.<br>• Producción de alimentos preparados.<br>• Elaboración de embutidos.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/picadora.jpg',
-                                emailSubject: 'Consulta sobre Picadoras de Carne',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Picadoras de Carne.'
-                            },
-                            machine3: {
-                                title: 'Mezcladoras',
-                                description: 'Maquinaria que se utiliza para integrar carne y otros ingredientes de manera homogénea.<br>Capacidad variable según el modelo (desde 60 Lts – 1200 Lts).<br>Aplicaciones:<br>• Homogeneizar la mezcla de carne con ingredientes.<br>• Asegurar una distribución uniforme de componentes.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/mezcladora.jpg',
-                                emailSubject: 'Consulta sobre Mezcladoras',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Mezcladoras.'
-                            },
-                            machine4: {
-                                title: 'Embutidoras',
-                                description: 'Máquinas utilizadas para llenar tripas naturales o artificiales con diferentes tipos de mezclas cárnicas.<br>Aplicaciones:<br>• Llenado de tripas con la mezcla cárnica preparada.<br>• Control de porciones, peso y tamaño del embutido.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/embutidora.jpg',
-                                emailSubject: 'Consulta sobre Embutidoras',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Embutidoras.'
-                            },
-                            machine5: {
-                                title: 'Embuchadoras',
-                                description: 'Máquina que se utiliza para embutir músculo completo en distintos tipos de tripas.<br>Aplicaciones:<br>• Bondiola.<br>• Lomo.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/embuchadora.jpg',
-                                emailSubject: 'Consulta sobre Embuchadoras',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Embuchadoras.'
-                            },
-                            machine6: {
-                                title: 'Cubeteadoras',
-                                description: 'Máquina diseñada para cortar productos alimenticios en cubos o dados de un tamaño específico.<br>Aplicaciones:<br>• Preparación de carne para estofados.<br>• Producción de embutidos.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/cubeteadora.jpg',
-                                emailSubject: 'Consulta sobre Cubeteadoras',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Cubeteadoras.'
-                            },
-                            machine7: {
-                                title: 'Clipeadoras',
-                                description: 'Máquinas utilizadas para cerrar o sellar productos alimenticios con clips metálicos.<br>Aplicaciones:<br>• Aseguran un cierre hermético e higiénico.<br>• Aumentan la velocidad de producción.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/clipeadora.jpg',
-                                emailSubject: 'Consulta sobre Clipeadoras',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Clipeadoras.'
-                            },
-                            machine8: {
-                                title: 'Feteadoras',
-                                description: 'Máquinas que se usan para cortar carnes, quesos y embutidos en rebanadas uniformes.<br>Aplicaciones:<br>• Procesamiento de carnes frías.<br>• Corte de quesos.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/feteadora.jpg',
-                                emailSubject: 'Consulta sobre Feteadoras',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Feteadoras.'
-                            },
-                            machine9: {
-                                title: 'Envasadoras al vacío',
-                                description: 'Máquina que se utiliza para extraer el aire de una bolsa o envase y sellarla herméticamente.<br>Aplicaciones:<br>• Conservación de alimentos.<br>• Empaque al vacío.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/envasadora.jpg',
-                                emailSubject: 'Consulta sobre Envasadoras al Vacío',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Envasadoras al Vacío.'
-                            },
-                            machine10: {
-                                title: 'Molinos para granos',
-                                description: 'Molinos diseñados para obtener la granulometría adecuada según el producto final.<br>Aplicaciones:<br>• Procesamiento de café, pimienta o especias.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/molino.jpg',
-                                emailSubject: 'Consulta sobre Molinos para Granos',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Molinos para Granos.'
-                            },
-                            machine11: {
-                                title: 'Atadoras de embutidos',
-                                description: 'Maquinaria que divide el embutido en porciones uniformes y de forma rápida.<br>Aplicaciones:<br>• Producción de chorizos, salames y salchichas.<br>Consultar modelos disponibles.',
-                                image: 'assets/images/machines/atadora.jpg',
-                                emailSubject: 'Consulta sobre Atadoras de Embutidos',
-                                emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Atadoras de Embutidos.'
+                    const buttons = document.querySelectorAll('.herdamBtn');
+                    const content = document.getElementById('machine-content');
+
+                    const machineData = {
+                        machine1: {
+                            title: 'Cutter',
+                            description: 'Desde pequeñas unidades para producción artesanal, hasta grandes equipos industriales de cientos de litros.<br>Capacidad variable: desde 15 Lts. hasta 750 Lts.<br>Aplicaciones:<br>• Producción de fiambres emulsificados.<br>• Preparación de masas cárnicas homogéneas.<br>• Mezcla de ingredientes y condimentos con la carne.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/cutter.svg',
+                            emailSubject: 'Consulta sobre Cutter',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Cutter.'
+                        },
+                        machine2: {
+                            title: 'Picadoras de carne',
+                            description: 'Maquinaria fundamental en el procesamiento cárnico, utilizada para triturar y homogeneizar cortes de carne.<br>Capacidad variable según el modelo.<br>Aplicaciones:<br>• Industria frigorífica.<br>• Producción de alimentos preparados.<br>• Elaboración de embutidos.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/picadora.svg',
+                            emailSubject: 'Consulta sobre Picadoras de Carne',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Picadoras de Carne.'
+                        },
+                        machine3: {
+                            title: 'Mezcladoras',
+                            description: 'Maquinaria que se utiliza para integrar carne y otros ingredientes de manera homogénea.<br>Capacidad variable según el modelo (desde 60 Lts – 1200 Lts).<br>Aplicaciones:<br>• Homogeneizar la mezcla de carne con ingredientes.<br>• Asegurar una distribución uniforme de componentes.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/mezcladora.svg',
+                            emailSubject: 'Consulta sobre Mezcladoras',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Mezcladoras.'
+                        },
+                        machine4: {
+                            title: 'Embutidoras',
+                            description: 'Máquinas utilizadas para llenar tripas naturales o artificiales con diferentes tipos de mezclas cárnicas.<br>Aplicaciones:<br>• Llenado de tripas con la mezcla cárnica preparada.<br>• Control de porciones, peso y tamaño del embutido.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/embutidora.svg',
+                            emailSubject: 'Consulta sobre Embutidoras',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Embutidoras.'
+                        },
+                        machine5: {
+                            title: 'Embuchadoras',
+                            description: 'Máquina que se utiliza para embutir músculo completo en distintos tipos de tripas.<br>Aplicaciones:<br>• Bondiola.<br>• Lomo.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/embuchadora.svg',
+                            emailSubject: 'Consulta sobre Embuchadoras',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Embuchadoras.'
+                        },
+                        machine6: {
+                            title: 'Cubeteadoras',
+                            description: 'Máquina diseñada para cortar productos alimenticios en cubos o dados de un tamaño específico.<br>Aplicaciones:<br>• Preparación de carne para estofados.<br>• Producción de embutidos.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/tocinera.svg',
+                            emailSubject: 'Consulta sobre Cubeteadoras',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Cubeteadoras.'
+                        },
+                        machine7: {
+                            title: 'Clipeadoras',
+                            description: 'Máquinas utilizadas para cerrar o sellar productos alimenticios con clips metálicos.<br>Aplicaciones:<br>• Aseguran un cierre hermético e higiénico.<br>• Aumentan la velocidad de producción.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/Clipeadoras.svg',
+                            emailSubject: 'Consulta sobre Clipeadoras',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Clipeadoras.'
+                        },
+                        machine8: {
+                            title: 'Feteadoras',
+                            description: 'Máquinas que se usan para cortar carnes, quesos y embutidos en rebanadas uniformes.<br>Aplicaciones:<br>• Procesamiento de carnes frías.<br>• Corte de quesos.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/feteadoras.svg',
+                            emailSubject: 'Consulta sobre Feteadoras',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Feteadoras.'
+                        },
+                        machine9: {
+                            title: 'Envasadoras al vacío',
+                            description: 'Máquina que se utiliza para extraer el aire de una bolsa o envase y sellarla herméticamente.<br>Aplicaciones:<br>• Conservación de alimentos.<br>• Empaque al vacío.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/envasadorasAlVacio.svg',
+                            emailSubject: 'Consulta sobre Envasadoras al Vacío',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Envasadoras al Vacío.'
+                        },
+                        machine10: {
+                            title: 'Molinos para granos',
+                            description: 'Molinos diseñados para obtener la granulometría adecuada según el producto final.<br>Aplicaciones:<br>• Procesamiento de café, pimienta o especias.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/molinillo.svg',
+                            emailSubject: 'Consulta sobre Molinos para Granos',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Molinos para Granos.'
+                        },
+                        machine11: {
+                            title: 'Atadoras de embutidos',
+                            description: 'Maquinaria que divide el embutido en porciones uniformes y de forma rápida.<br>Aplicaciones:<br>• Producción de chorizos, salames y salchichas.<br>Consultar modelos disponibles.',
+                            image: 'assets/images/productosMaquinaria/atadoras.svg',
+                            emailSubject: 'Consulta sobre Atadoras de Embutidos',
+                            emailBody: 'Hola, me gustaría consultar sobre los modelos disponibles para Atadoras de Embutidos.'
+                        }
+                    };
+
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Remover clases activas de todos los botones
+                            buttons.forEach(btn => btn.classList.remove('active-btn'));
+
+                            // Agregar clase activa al botón seleccionado
+                            button.classList.add('active-btn');
+
+                            // Actualizar el contenido dinámico
+                            const machineKey = button.getAttribute('data-machine');
+                            const machine = machineData[machineKey];
+
+                            if (machine) {
+                                content.innerHTML = `
+                                    <h2>${machine.title}</h2>
+                                    <p>${machine.description}</p>
+                                    <div style="text-align: center;">
+                                        <img src="${machine.image}" alt="${machine.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem; border-radius: 10px; margin-top:30px;">
+                                    </div>
+                                   
+                                `;
+
+                                // Desplazamiento suave al contenido dinámico
+                                content.scrollIntoView({ behavior: 'smooth' });
                             }
-                        };
-                
-                        buttons.forEach(button => {
-                            button.addEventListener('click', () => {
-                                // Remover clases activas de todos los botones
-                                buttons.forEach(btn => btn.classList.remove('active-btn'));
-                
-                                // Agregar clase activa al botón seleccionado
-                                button.classList.add('active-btn');
-                
-                                // Actualizar el contenido dinámico
-                                const machineKey = button.getAttribute('data-machine');
-                                const machine = machineData[machineKey];
-                
-                                if (machine) {
-                                    content.innerHTML = `
-                                        <h2>${machine.title}</h2>
-                                        <p>${machine.description}</p>
-                                        <div style="text-align: center;">
-                                            <img src="${machine.image}" alt="${machine.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
-                                        </div>
-                                        <div style="text-align: center; margin-top: 1rem;">
-                                            <a href="mailto:infonabel@nabel.com.ar?subject=${encodeURIComponent(machine.emailSubject)}&body=${encodeURIComponent(machine.emailBody)}" 
-                                               class="btn btn-primary" 
-                                               style="background-color: #af202a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-                                               Consultar modelos por Gmail
-                                            </a>
-                                        </div>
-                                    `;
-                                }
-                            });
                         });
-                
-                        // Activar el primer botón por defecto
-                        buttons[0].click();
                     });
+
+                    // Activar el primer botón por defecto
+                    buttons[0].click();
+                });
                 </script>
             </div>
         </section>
@@ -584,14 +667,35 @@
                             <div class="item">
                                 <div class="services-five__img-box">
                                     <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Discos">
+                                        <img src="assets/images/repuestosCarrusel/1.svg" alt="Discos">
                                     </div>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="services-five__img-box">
                                     <div class="services-five__img">
-                                        <img src="assets/images/services/services-5-1.jpg" alt="Cuchillas">
+                                        <img src="assets/images/repuestosCarrusel/2.svg" alt="Discos">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/repuestosCarrusel/3.svg" alt="Discos">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/repuestosCarrusel/4.svg" alt="Discos">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="services-five__img-box">
+                                    <div class="services-five__img">
+                                        <img src="assets/images/repuestosCarrusel/5.svg" alt="Discos">
                                     </div>
                                 </div>
                             </div>
@@ -666,13 +770,7 @@
                                         <div style="text-align: center;">
                                             <img src="${repuesto.image}" alt="${repuesto.title}" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
                                         </div>
-                                        <div style="text-align: center; margin-top: 1rem;">
-                                            <a href="mailto:infonabel@nabel.com.ar?subject=${encodeURIComponent(repuesto.emailSubject)}&body=${encodeURIComponent(repuesto.emailBody)}" 
-                                               class="btn btn-primary" 
-                                               style="background-color: #af202a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-                                               Consultar medidas por Gmail
-                                            </a>
-                                        </div>
+                                        
                                     `;
                                 }
                             });
@@ -764,10 +862,12 @@
                         <h3 class="cta-two__title">Soluciones de confianza para tu línea de producción.</h3>
                         <p class="cta-two__text">Conoce nuestros productos y contáctanos para optimizar procesos.</p>
                         <div class="cta-two__btn-box">
-                            <a href="productos.html" class="cta-two__btn thm-btn-two">Consultanos vía Whatsapp<span
-                                    class="icon-dubble-arrow-right"></span></a>
-                            <a href="contact.html" class="cta-two__btn thm-btn-two cta-two__btn-secondary">Consulta vía Gmail<span
-                                    class="icon-dubble-arrow-right"></span></a>
+                            <a href="https://wa.me/5493512874995" target="_blank" class="cta-two__btn thm-btn-two margenSup">
+                                Consultanos vía Whatsapp<span class="icon-dubble-arrow-right"></span>
+                            </a>
+                            <a href="mailto:infonabel@nabel.com.ar" target="_blank" class="cta-two__btn thm-btn-two cta-two__btn-secondary margenSup">
+                                Consulta vía Gmail<span class="icon-dubble-arrow-right"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
