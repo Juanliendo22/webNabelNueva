@@ -107,9 +107,8 @@
                         </div>
                         <div class="form-inner">
                             <h4>Rellene los campos</h4>
-                            <form action="assets/inc/sendemail.php" class="contact-form-validated"
-                                novalidate="novalidate">
-                                <div class="form-group ">
+                            <form id="whatsappForm" class="contact-form-validated">
+                                <div class="form-group">
                                     <input type="text" name="name" placeholder="Nombre/Razón social" required="">
                                 </div>
                                 <div class="form-group">
@@ -125,6 +124,22 @@
                             <div class="result"></div>
                         </div>
                         
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const form = document.getElementById('whatsappForm');
+                                form.addEventListener('submit', function (event) {
+                                    event.preventDefault(); // Evitar el envío del formulario por defecto
+                        
+                                    const name = form.querySelector('input[name="name"]').value;
+                                    const email = form.querySelector('input[name="email"]').value;
+                                    const message = form.querySelector('textarea[name="message"]').value;
+                        
+                                    const whatsappNumber = "5493512874995"; // Número de WhatsApp real
+                                    const whatsappURL = `https://wa.me/${whatsappNumber}?text=Hola, mi nombre es ${name}. Mi correo es ${email}. Consulta: ${message}`;
+                                    window.open(whatsappURL, "_blank");
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -691,13 +706,35 @@
 
    
     <div class="floating-buttons">
-        <button class="floating-button whatsapp" onclick="sendToWhatsApp()">
+        <button id="whatsappButton" class="floating-button whatsapp">
             <i class="fab fa-whatsapp"></i>
         </button>
-        <button class="floating-button gmail" onclick="sendToGmail()">
+        <button id="gmailButton" class="floating-button gmail">
             <i class="fa fa-envelope"></i>
         </button>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const whatsappButton = document.getElementById('whatsappButton');
+            const gmailButton = document.getElementById('gmailButton');
+    
+            whatsappButton.addEventListener('click', function () {
+                const whatsappNumber = "5493512874995"; // Número de WhatsApp real
+                const defaultMessage = "Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?";
+                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
+                window.open(whatsappURL, "_blank");
+            });
+    
+            gmailButton.addEventListener('click', function () {
+                const gmailAddress = "infonabel@nabel.com.ar"; // Dirección de Gmail real
+                const subject = "Consulta sobre servicios";
+                const body = "Hola, estoy interesado en sus servicios. ¿Podrían brindarme más información?";
+                const mailtoURL = `mailto:${gmailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.open(mailtoURL, "_blank");
+            });
+        });
+    </script>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

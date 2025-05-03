@@ -109,9 +109,8 @@
                         </div>
                         <div class="form-inner">
                             <h4>Rellene los campos</h4>
-                            <form action="assets/inc/sendemail.php" class="contact-form-validated"
-                                novalidate="novalidate">
-                                <div class="form-group ">
+                            <form id="whatsappForm" class="contact-form-validated">
+                                <div class="form-group">
                                     <input type="text" name="name" placeholder="Nombre/Razón social" required="">
                                 </div>
                                 <div class="form-group">
@@ -127,6 +126,22 @@
                             <div class="result"></div>
                         </div>
                         
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const form = document.getElementById('whatsappForm');
+                                form.addEventListener('submit', function (event) {
+                                    event.preventDefault(); // Evitar el envío del formulario por defecto
+                        
+                                    const name = form.querySelector('input[name="name"]').value;
+                                    const email = form.querySelector('input[name="email"]').value;
+                                    const message = form.querySelector('textarea[name="message"]').value;
+                        
+                                    const whatsappNumber = "5493512874995"; // Número de WhatsApp real
+                                    const whatsappURL = `https://wa.me/${whatsappNumber}?text=Hola, mi nombre es ${name}. Mi correo es ${email}. Consulta: ${message}`;
+                                    window.open(whatsappURL, "_blank");
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -1693,10 +1708,15 @@
                         <h3 class="cta-two__title">Investigación + desarrollo en insumos alimenticios </h3>
                         <p class="cta-two__text">para que su formulación esté lo más completa, funcional y competitiva del mercado. <br> Solicita más información y te asesoramos.</p>
                         <div class="cta-two__btn-box">
-                            <a href="productos.html" class="cta-two__btn thm-btn-two">Consultanos vía Whatsapp<span
-                                    class="icon-dubble-arrow-right"></span></a>
-                            <a href="contact.html" class="cta-two__btn thm-btn-two cta-two__btn-secondary">Consulta vía Gmail<span
-                                    class="icon-dubble-arrow-right"></span></a>
+                            <a href="https://wa.me/5493512874995?text=Hola, estoy interesado en sus servicios." 
+                               class="cta-two__btn thm-btn-two" 
+                               target="_blank">
+                               Consultanos vía Whatsapp<span class="icon-dubble-arrow-right"></span>
+                            </a>
+                            <a href="mailto:infonabel@nabel.com.ar?subject=Consulta%20sobre%20servicios&body=Hola,%20estoy%20interesado%20en%20sus%20servicios.%20¿Podrían%20brindarme%20más%20información?" 
+                               class="cta-two__btn thm-btn-two cta-two__btn-secondary">
+                               Consulta vía Gmail<span class="icon-dubble-arrow-right"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
